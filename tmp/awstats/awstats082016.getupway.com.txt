@@ -1,0 +1,931 @@
+AWSTATS DATA FILE 7.4 (build 20140726)
+# If you remove this file, all statistics for date 201608 will be lost/reset.
+# Last config file used to build this data file was /home/getupway/tmp/awstats/awstats.getupway.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2009                
+POS_TIME 2674                
+POS_VISITOR 12818               
+POS_DAY 19365               
+POS_DOMAIN 3640                
+POS_LOGIN 4323                
+POS_ROBOT 4478                
+POS_WORMS 5069                
+POS_EMAILSENDER 5200                
+POS_EMAILRECEIVER 5343                
+POS_SESSION 20267               
+POS_SIDER 20476               
+POS_FILETYPES 5478                
+POS_DOWNLOADS 5829                
+POS_OS 6385                
+POS_BROWSER 6670                
+POS_SCREENSIZE 7892                
+POS_UNKNOWNREFERER 7966                
+POS_UNKNOWNREFERERBROWSER 8631                
+POS_ORIGIN 8899                
+POS_SEREFERRALS 9044                
+POS_PAGEREFS 9219                
+POS_SEARCHWORDS 9505                
+POS_KEYWORDS 9683                
+POS_MISC 2337                
+POS_ERRORS 9768                
+POS_CLUSTER 4179                
+POS_SIDER_404 9931                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20160901014548 28 4792 9520810355249
+FirstTime 0
+LastTime 20160831174925
+LastUpdate 20160901140640 28 0 27 0 0
+TotalVisits 214                 
+TotalUnique 153                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 159                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+DirectorSupport 0 0 0
+QuickTimeSupport 0 0 0
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+TotalMisc 0 0 0
+PDFSupport 0 0 0
+AddToFavourites 0 71 0
+JavaEnabled 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 37 225 924537213 141 220 2663492
+1 9 151 22683646 82 154 52752821
+2 2 50 1511913 81 99 1104328
+3 11 158 5216733 106 161 28718780
+4 96 489 4132336 354 470 8119434
+5 188 1333 3712319 99 181 4591133
+6 13 194 5881150 74 205 3285115
+7 12 117 18433996 55 62 306819
+8 13 163 4769082 154 209 2854301
+9 5 114 3421847 151 159 730907
+10 43 267 2574017 70 101 841819
+11 151 1072 2473598334 102 130 776665
+12 140 947 1523740130 308 367 5433405
+13 139 361 1312662684 91 211 7551521
+14 23 262 70556886 40 90 1450401
+15 243 2283 12436379244 418 628 8120343
+16 288 1625 6648372241 157 183 15612228
+17 461 1904 341149344 233 359 3648863
+18 245 1532 866260600 153 241 3243677
+19 182 848 8731261513 117 167 2452038
+20 205 580 8255445009 120 156 983868
+21 108 466 304540201 147 172 1025443
+22 67 484 1674435725 90 187 3822931
+23 9 67 1884480 109 141 1356443
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 29
+il 1864 8204 14958104651
+ua 511 4335 8901200487
+us 90 287 7053780
+br 61 1368 42418638
+de 58 154 4027039
+md 30 30 171820
+ru 21 316 9972287
+kg 9 140 4109734
+gb 5 123 3969957
+za 4 101 3027181
+in 4 109 3634558
+it 3 51 1516266
+fr 3 3 13255
+ar 3 64 1835581
+se 2 50 1511910
+jo 2 50 1511912
+es 2 27 907286
+be 2 50 1511912
+ve 2 31 956333
+ae 2 50 1514799
+jp 2 2 38224
+my 2 50 1514799
+tr 2 25 897939
+ph 1 21 778013
+nl 1 1 4354
+pt 1 1 4353
+id 1 1 19339
+eg 1 21 778017
+sg 1 27 905772
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 11
+bot[\s_+:,\.\;\/\\-] 1324 46837778 20160831230853 152
+googlebot 1144 22241113 20160830141110 43
+bingpreview 180 12691212 20160825131101 0
+google[_+\s]web[_+\s]preview 51 1453009 20160814152143 0
+[\s_+:,\.\;\/\\-]bot 45 1486820 20160817045843 0
+robot 34 931366 20160817213720 0
+unknown 12 2628 20160831162754 12
+no_user_agent 10 176132 20160820140435 0
+googlebot\-image 9 13686 20160814155236 0
+curl 1 18885 20160803172031 0
+netcraft 1 18901 20160810182303 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 14
+map 9 67062 0 0
+docx 5 126145 0 0
+mp4 183 23365391669 0 0
+woff2 61 2192568 0 0
+eot 42 764648 0 0
+ttf 32 4829440 0 0
+css 4003 49422006 0 0
+gif 22 61491 0 0
+woff 25 712608 0 0
+js 5143 87581967 0 0
+jpg 1371 427601648 0 0
+Unknown 2266 11331920 0 0
+png 2275 2035639 0 0
+html 255 1791385 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 9
+/resources/articles/home-video-3.mp4 15 249 9979803422
+/resources/articles/home-video-2.mp4 13 123 4550594604
+/resources/articles/home-video-1.mp4 13 226 8834993643
+/resources/documents/20160629164029_ec8a015143.docx 1 0 15480
+/resources/test.txt 1 0 19
+/resources/documents/20160629143135_7b728463.docx 1 0 29324
+/resources/documents/20160823031434_93429ed6441b0.docx 1 0 25882
+/resources/documents/20160710142750_192045c0f9c3.docx 1 0 15480
+/resources/documents/20160710143023_7cf63f2b4f538.docx 1 2 39979
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 16
+macosx6 4 4
+win7 6539 560
+macosx8 2 2
+ios_ipad 1821 521
+macosx7 1 1
+macosx 1 1
+linux 16 16
+win8 3134 766
+winlong 6 6
+winnt 3981 626
+Unknown 66 60
+linuxandroid 101 5
+win8.1 174 63
+blackberry 2 2
+macosx5 3 3
+winxp 441 54
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 58
+safari5.1.7 1 1
+chrome26.0.1410.64 2 2
+chrome11.0.696.34 1 1
+chrome47.0.2526.111 499 24
+safari9.0 1457 466
+chrome32.0.1700.107 713 30
+chrome37.0.2062.120 2 2
+chrome27.0.1453.93 3 3
+firefox34.0 5 5
+safari5.1.9 1 1
+chrome36.0.1985.125 2 2
+chrome16.0.912.63 1 1
+Unknown 24 22
+chrome23.0.1271.64 1 1
+firefox14.0.1 11 11
+chrome52.0.2743.98 101 5
+chrome51.0.2704.103 722 108
+chrome18.0.1025.166 1 1
+chrome32.0.1667.0 99 3
+msie8.0 139 7
+chrome49.0.2623.75 2 2
+chrome25.0.1364.172 1 1
+safari6.0.2 1 1
+msie10.0 2915 757
+chrome35.0.1916.153 60 3
+firefox19.0 1 1
+chrome52.0.2743.116 6374 888
+chrome49.0.2623.112 340 25
+safari5.1.8 1 1
+firefox28.0 1 1
+msie6.0 30 30
+firefox3.6.3 1 1
+chrome37.0.2049.0 1 1
+safari 364 55
+netscape5.0 4 3
+chrome31.0.1650.57 107 9
+msie7.0 16 0
+chrome45.0.2454.101 1 1
+firefox12.0 1 1
+safari5.0.2 1 1
+safari5.0.6 3 3
+opera39.0.2256.48 200 30
+chrome23.0.1271.97 1 1
+chrome36.0.1985.143 1011 43
+msie11.0 605 58
+chrome25.0.1364.169 1 1
+firefox21.0 4 4
+w3c_validator 3 3
+chrome28.0.1500.95 50 1
+firefox11.0 2 2
+firefox47.0 57 6
+mozilla 39 35
+blackberry 2 2
+chrome49.0.2623.87 41 3
+msie9.0 21 0
+firefox5.0 1 1
+chrome27.0.1453.90 1 1
+chrome51.0.2704.106 243 18
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 10
+W3C_Validator/1.3_http://validator.w3.org/services 20160820164719
+Validator.nu/LV_http://validator.w3.org/services 20160820164720
+Whibse 20160823162232
+Mozilla/5.0_(compatible;_Google-Site-Verification/1.0) 20160814151650
+Mozilla/5.0_(compatible;_SiteExplorer/1.0b;__http://siteexplorer.info/) 20160825182827
+panscient.com 20160817175145
+Mozilla/5.0_(compatible;_YandexBot/3.0;__http://yandex.com/bots) 20160802072414
+python-requests/2.10.0 20160826065250
+Python-urllib/2.7 20160825052318
+Mozilla/5.0_(compatible;_Googlebot/2.1;__http://www.google.com/bot.html) 20160814151105
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 5
+Python-urllib/2.7 20160825052318
+Whibse 20160823162232
+panscient.com 20160817175145
+Validator.nu/LV_http://validator.w3.org/services 20160820164720
+python-requests/2.10.0 20160826065250
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 325 366
+From1 0 0
+From2 14 14
+From3 74 74
+From4 2277 15838
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 3
+google 5 5
+yandex 6 6
+bing 3 3
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 4
+http://seo-2-0.com/try.php 61 61
+http://buttons-for-website.com 10 10
+http://burger-imperia.com 2 2
+http://www.yandex.ua/clck/jsredir 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 2
+getupway.com 2
+getupway 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 2
+getupway.com 2
+getupway 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 6
+500 6 196725
+403 10 22454
+302 1780 33140
+400 11 135111
+206 19 68477924
+404 345 4400731
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 93
+/oils-special-liquids-fiat.html 2 -
+/s/~o4 2 -
+/administrator/index.php 8 -
+/user/profile 1 http://www.getupway.com/hello
+/es/s/~o7 2 -
+/en/u/3 1 -
+/es/repair-parts.html 1 -
+/administrator/ 5 -
+/de/s/~o7 1 -
+/offers/offerBlocks/delete/id/26 1 http://getupway.com/offers/offerBlocks/index/id/27
+/repair-parts.html 1 -
+/manager/ 2 -
+/en/s/~o3 1 -
+/language/de 1 -
+/themes/frontend/fonts/glyphicons-halflings-regular.ttf 8 http://getupway.com/s
+/blog/wp-login.php 1 -
+/wp-admin/css/wp-admin.css 1 -
+/u/2 2 -
+/blog/ 1 http://getupway.com/blog/
+/user/user/login/language/en 2 -
+/en/s/~o7 1 -
+/user/user/registration/language/es 4 -
+/contacts.html 1 -
+/s/~o13 2 -
+/admin/index.php 2 -
+/language/en 2 -
+/es/insurance.html 1 -
+/stockCars/index 4 -
+/es/leasing.html 1 -
+/user/user/registration/language/de 3 -
+/s/~o5 3 -
+/themes/frontend/img/logo-mail.png 3 -
+/stories/kak-ya-nashel-avto-vo-frantsii 21 -
+/es/contacts.html 1 -
+/u/3 1 -
+/typo3/ 2 -
+/warranty.html 3 -
+/user/user/registration 11 -
+/user/user/login/language/de 2 -
+/es/u/4 2 -
+/site/testDrive 4 -
+/themes/frontend/fonts/glyphicons-halflings-regular.woff 8 http://getupway.com/s
+/user/user/login 6 -
+/.git/ 1 http://getupway.com/.git/
+/es/u/2 2 -
+/u/4 2 -
+/s/~o6 1 -
+/themes/frontend/js/chart.js/chart.bundle.min.js 1 -
+/resources/offers/400_20160703083731_cce3ddb6eaa.jpg 2 http://getupway.com/
+/user/user/registration/language/en 3 -
+/wp-login.php 13 -
+/es/warranty.html 3 -
+/es/s/~o6 1 -
+/es/oils-special-liquids-fiat.html 1 -
+/assistance.html 1 -
+/s/~o14 2 -
+/technical.html 1 -
+/de/s/~o3 1 -
+/admine 1 -
+/s/~o3 2 -
+/s/~o7 5 -
+/user/profile/ 1 -
+/themes/frontend/js/select2.min.js 1 -
+/es/s/~o3 2 -
+/es/credit.html 1 -
+/en/s/~o14 1 -
+/service.html 1 -
+/es/u/3 1 -
+/es/maisonproducts.html 1 -
+/themes/account/img/pin-success.png 55 http://getupway.com/user/profile/stagePublic
+/my/stage3 3 http://getupway.com/my/stage-2
+/language/es 1 -
+/wp-content/plugins/mailpress/mp-includes/action.php 1 -
+/es/s/~o14 1 -
+/user/user/login/language/es 3 -
+/de/s/~o14 1 -
+/themes/frontend/img/sitemap-bg.jpg 1 http://getupway.com/sitemap
+/credit.html 1 -
+/save-my-pass-please 15 -
+/themes/frontend/js/plugins/intltelinput/intltelinput.min.js 1 -
+/themes/account/img/blank_offer.png 38 http://getupway.com/offers/offerReviews/index
+/cars/index 4 -
+/es/service.html 1 -
+/themes/frontend/fonts/glyphicons-halflings-regular.eot 10 http://getupway.com/s
+/admin.php 11 -
+/maisonproducts.html 1 -
+/es/technical.html 1 -
+/de/u/3 1 -
+/user/ 2 -
+/accessories.html 1 -
+/leasing.html 1 -
+/s/~o12 2 -
+/wp-admin/ 5 http://getupway.com/wp-login.php
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 159
+46.19.85.51 553 1771 803913052 20160824153744
+37.46.41.150 491 2572 3526591646 20160827060411
+93.76.198.125 350 3450 7926695922 20160824174252
+46.19.85.74 281 1025 2745192186 20160825162114
+46.19.85.85 190 663 5119160872 20160826212010
+31.210.186.157 128 781 3340298 20160815050123
+37.46.41.97 67 553 609315604 20160813120914
+92.249.69.75 60 171 12621195 20160806212117
+46.19.85.235 44 265 129260137 20160814161548
+46.19.86.11 38 249 1133325765 20160806000303
+78.46.156.169 32 32 580381 20160804211913
+212.90.62.95 30 200 250363908 20160818225955
+195.88.15.100 28 329 651304375 20160819130436
+80.246.133.211 23 112 129671256 20160815112837
+178.238.225.65 22 22 422832 20160818005513
+176.104.2.107 21 77 34430957 20160817113420
+46.19.85.137 20 253 690747826 20160820192214
+208.43.225.84 16 16 83996 20160825182827
+208.43.225.85 16 16 82741 20160821192835
+72.76.221.220 15 17 67979 20160817175145
+69.58.178.58 11 11 214439 20160818183159
+46.19.85.134 10 117 53490 20160823121501
+176.123.8.33 10 10 46528 20160831174925
+176.123.2.45 10 10 65694 20160830174156
+31.154.10.142 9 69 64639188 20160801145822
+186.225.28.226 2 50 1511914 20160803181231
+91.243.209.177 5 112 3054697 20160819184934
+41.68.128.129 1 21 778017 20160814010221
+189.114.246.88 1 30 1011671 20160801184036
+187.108.21.90 1 44 1350552 20160811231342
+176.123.2.42 4 4 24602 20160822182317
+181.30.72.66 2 51 1439181 20160817153934
+176.195.125.125 4 53 1676536 20160804214820
+189.107.135.3 1 10 317421 20160804162544
+200.153.179.46 1 39 1346673 20160805013944
+179.179.212.109 1 11 385998 20160804131855
+177.53.67.26 1 14 416826 20160805003119
+86.99.183.34 2 50 1514799 20160815125554
+189.6.24.153 2 50 1511913 20160805050801
+46.98.248.82 2 51 1434939 20160817122659
+104.45.18.178 3 4 217010 20160821143253
+89.154.164.203 1 1 4353 20160805081851
+78.163.55.84 1 24 893588 20160810131337
+66.102.9.116 1 1 4555 20160825205508
+177.18.1.62 1 49 1360996 20160809040934
+37.147.100.129 4 53 1676538 20160804005516
+193.151.59.180 7 57 1472455 20160827201055
+183.171.161.146 2 50 1514799 20160817071304
+150.70.97.86 1 1 18885 20160802230247
+186.226.7.22 1 19 566592 20160815134817
+86.62.117.180 1 1 18885 20160803180549
+82.166.137.74 1 1 4351 20160801192917
+187.14.91.198 2 50 1511912 20160811215243
+189.18.10.212 2 50 1511914 20160802014119
+111.119.251.150 2 50 1511912 20160807062547
+177.137.204.208 1 26 902730 20160804145645
+109.173.49.197 2 57 1866160 20160826034145
+128.30.52.96 2 2 9184 20160820164719
+43.249.225.134 1 39 1349561 20160817152720
+84.140.99.188 2 50 1511913 20160804120008
+177.32.187.68 2 50 1511913 20160806212952
+186.249.148.80 2 50 1511915 20160802165503
+66.249.93.90 1 1 4353 20160814151606
+200.163.89.169 2 50 1511915 20160809175530
+177.138.248.187 1 19 566102 20160807193031
+60.47.135.131 1 1 19339 20160817082825
+128.75.107.76 2 40 1421895 20160804003112
+41.145.208.166 2 50 1511913 20160808075727
+109.67.148.169 5 101 1448229 20160830195550
+179.177.46.107 2 50 1511914 20160806180810
+201.19.193.176 2 50 1514076 20160812220748
+177.130.55.34 1 7 243136 20160808033218
+95.188.94.77 1 1 19339 20160817073807
+177.97.220.135 2 50 1514798 20160818145630
+192.3.138.146 1 1 4593 20160820164319
+189.105.102.194 1 1 4351 20160813191436
+179.154.234.205 2 50 1511911 20160808085656
+187.59.232.9 1 48 1362524 20160813153048
+31.208.149.70 2 50 1511910 20160804085101
+200.109.60.164 1 12 389740 20160808014423
+186.219.39.19 1 5 233314 20160804132005
+192.154.106.210 3 41 1443150 20160829200521
+187.110.82.134 1 7 243135 20160808011314
+59.189.204.216 1 27 905772 20160807154805
+108.231.176.176 1 40 1351404 20160815001044
+128.30.52.71 1 1 4594 20160820164720
+181.222.10.210 1 7 243136 20160811155834
+185.130.5.188 1 1 19335 20160826232007
+108.175.10.30 1 1 18885 20160806175438
+190.199.241.82 1 19 566593 20160816014239
+157.55.39.84 0 8 128494 
+151.24.253.35 2 50 1511914 20160803173637
+191.6.127.130 1 49 1360994 20160806183121
+104.197.104.167 1 1 19351 20160825052318
+46.98.238.138 3 52 536504 20160812165706
+95.211.205.151 1 1 4354 20160805150144
+195.9.108.198 1 1 19339 20160817085342
+107.22.125.123 1 1 19335 20160830054858
+201.42.216.150 1 22 840391 20160802161125
+112.198.118.106 1 21 778013 20160803105809
+176.195.42.246 2 57 1866161 20160828032022
+45.55.159.101 3 99 2726832 20160803162749
+31.192.249.101 5 54 1444903 20160801221327
+207.46.13.57 0 5 166594 
+46.98.89.40 5 54 1446662 20160812105918
+201.20.107.194 1 14 416825 20160806043812
+52.24.213.177 1 1 4555 20160823162232
+189.74.114.202 1 1 4355 20160802132216
+201.35.180.153 1 11 385997 20160809135545
+207.46.13.176 0 2 120151 
+177.1.144.249 1 22 840390 20160809134159
+190.183.254.7 1 13 396400 20160811230401
+169.50.98.9 2 2 8920 20160826065250
+45.33.20.249 1 1 4351 20160803015802
+85.152.30.152 1 1 4561 20160823213055
+105.224.229.140 1 44 1353437 20160817195552
+37.147.105.93 1 50 1364168 20160826045121
+94.143.196.194 4 86 2664831 20160821143302
+193.107.109.1 0 1 17838873 
+201.0.12.82 2 50 1514076 20160813004600
+187.74.112.203 2 50 1511914 20160801205404
+149.202.98.161 1 1 4350 20160804011459
+66.102.7.189 1 1 4592 20160820180220
+179.210.133.110 2 50 1511915 20160802202748
+187.56.192.137 1 1 4353 20160807175839
+200.96.69.32 1 39 1346674 20160809163928
+109.64.89.145 4 53 1440751 20160801161602
+54.177.7.178 1 1 4592 20160818160101
+177.138.149.234 1 32 1218872 20160814032934
+79.69.144.250 2 50 1514798 20160814213351
+94.255.14.191 1 1 19339 20160817080818
+85.115.62.180 2 50 1511912 20160812080053
+189.14.53.163 1 17 500526 20160803184033
+139.195.61.250 1 1 19339 20160817091642
+177.21.255.250 2 50 1514075 20160814091549
+128.30.52.134 1 1 4594 20160820164549
+88.249.7.99 1 1 4351 20160803030026
+94.23.174.56 1 1 4554 20160826042324
+105.226.158.118 1 7 161831 20160818080530
+66.249.93.98 2 2 4405 20160814151650
+189.11.184.224 1 1 4354 20160812004733
+91.121.83.118 1 1 4351 20160803060214
+128.30.52.73 2 2 9190 20160820164547
+200.0.39.6 1 6 239238 20160815214244
+176.123.6.7 6 6 34996 20160824180431
+62.24.181.134 0 6 259960 
+83.134.219.239 2 50 1511912 20160804194659
+151.51.129.235 1 1 4352 20160804160259
+212.34.20.5 2 50 1511912 20160804151103
+40.77.167.38 0 6 282267 
+104.154.19.221 1 1 19339 20160821165251
+177.177.10.98 2 50 1511913 20160805022400
+177.55.144.3 1 17 500524 20160811164250
+104.200.154.60 1 1 19335 20160830153606
+84.163.108.33 2 50 1511913 20160807214409
+80.64.173.162 1 1 4592 20160818031318
+43.252.6.56 1 20 773085 20160814145504
+62.24.181.135 1 17 683287 20160814223211
+95.22.145.179 1 26 902725 20160807204643
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20160801 65 550 1450557247 10
+20160802 14 247 513316321 7
+20160803 16 249 7073297 11
+20160804 66 514 301569596 15
+20160805 45 439 1185417502 8
+20160806 69 338 935155113 7
+20160807 10 243 11043016 7
+20160808 7 126 3899835 5
+20160809 8 241 11086207 6
+20160810 1 24 893588 1
+20160811 6 131 4002524 5
+20160812 20 214 5048827 7
+20160813 29 344 9437580 5
+20160814 139 1652 1062601552 11
+20160815 135 911 134367183 6
+20160816 1 19 566593 1
+20160817 49 334 41687548 12
+20160818 71 310 496366310 10
+20160819 173 1379 2014145046 10
+20160820 15 64 63842 10
+20160821 34 116 2875585 8
+20160822 236 987 7198020654 5
+20160823 728 3228 9782548472 8
+20160824 218 1009 5208361276 8
+20160825 260 882 5237651699 8
+20160826 245 815 9995080847 7
+20160827 12 119 19498282 5
+20160828 2 57 1866161 1
+20160829 4 42 1447525 2
+20160830 11 107 1506860 7
+20160831 1 1 4555 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+5mn-15mn 10
+15mn-30mn 6
+2mn-5mn 4
+1h+ 9
+0s-30s 164
+30mn-1h 5
+30s-2mn 16
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 255
+/hello 344 2260887 159 103
+/s 193 868904 0 3
+/ 186 1183736 26 11
+/user/privateMessages/ajaxList 107 179069 0 0
+/user/privateMessages/getNewMessages 107 4173 0 0
+/listLanguages/getData 89 2608 0 0
+/my/stage-2 76 486971 1 1
+/user/profile/stagePublic 63 385283 0 0
+/themes/frontend/fonts/fontawesome-webfont.woff2 61 2192568 0 10
+/my/offers 52 289636 0 0
+/my/orders 47 242306 0 1
+/recover-pass 44 243361 2 3
+/my/stage-1 41 398691 0 0
+/themes/frontend/fonts/fontawesome-webfont.eot 40 752200 0 5
+/parameters/default/admin 39 313827 0 0
+/themes/frontend/fonts/fontawesome-webfont.ttf 32 4829440 1 31
+/user/userAddresses/index 28 141041 0 0
+/user/login/socialFB 28 4365 0 1
+/my/offers/~e17 28 254865 0 0
+/my/stage-3 27 141834 0 0
+/stories 26 258079 1 4
+/themes/frontend/fonts/fontawesome-webfont.woff 25 712608 0 2
+/s/~o16 24 298453 2 3
+/orders/payments/income 19 95514 0 1
+/u/27 18 116129 0 0
+/my/offers/~e20 6 51591 0 0
+/my/offers/~e18/faq 1 5403 0 0
+/my/offers/~e28/faq 2 10331 0 0
+/my/offers/docs/~e14 1 5027 0 0
+/my/offers/~e20/docs/add 3 15144 0 0
+/parameters/default/update/id/78 1 3505 0 0
+/s/~o19 9 76064 1 2
+/my/offers/~e26 2 15996 0 0
+/my/offers/~e28/photos 15 83124 0 1
+/stories/prodvigaemyiy-mediaplan-aktualnaya-natsionalnaya-zadacha 5 28448 2 1
+/offers/offerBlocks/index/id/28/master/go 4 21430 0 0
+/parameters/default/update/id/15 2 7180 0 0
+/offers/offerBlocks/add/id/27 4 80 0 0
+/my/offers/docs/~e12 1 5032 0 0
+/my/offers/~e26/docs/add 2 10146 0 0
+/s/~o24 2 13094 1 1
+/siteVars/siteVars/admin 5 21185 0 0
+/about.html 10 92084 0 0
+/offers/default/admin 2 10989 0 0
+/articles/default/update/id/1 1 5315 0 0
+/offers/offerFaq/add/id/26 2 9920 0 0
+/offers/offerFaq/edit/id/6 1 5472 0 0
+/stories/mejlichnostnyiy-kontent-osnovnyie-momentyi 2 10825 0 0
+/offers/offerBlocks/index/id/27/s/2016-07-01 1 5351 0 0
+/my/offers/~e16/faq 1 5449 0 0
+/my/offers/~e27 7 55613 0 0
+/parameters/default/update/id/46 2 7042 0 0
+/user/profile/firstPass/p/9f853c28756c1e4bf20fe876c4441c12 1 4881 0 0
+/parameters/default/update/id/14 1 3505 0 0
+/my/offers/~e27/options/add 1 5144 0 0
+/my/offers/~e16/options 5 26545 0 0
+/my/offers/~e26/options 2 10746 0 0
+/u/26 9 53984 0 0
+/offers/default/order/id/18 1 4934 0 0
+/cookies.html 3 38273 1 1
+/assets/efb289f8/redactor-font.eot 2 12448 0 0
+/articles/default/create 1 4105 0 0
+/offers/default/order/id/17 2 9996 0 0
+/offers/default/order/id/16 6 29948 0 0
+/en/how-it-works.html 3 11827 0 0
+/parameters/default/update/id/117 1 3504 0 0
+/my/offers/~e19/faq 5 28578 0 0
+/my/offers/~e18/photos 1 5646 0 0
+/user/profile/savePhoto/type/photo3 9 767 0 0
+/my/offers/~e18/docs 1 5442 0 0
+/offers/offerBlocks/index/id/16/s/2016-10-01 1 5359 0 0
+/my/offers/~e16/docs 1 5393 0 0
+/offers/offerBlocks/index/id/19/s/2016-08-01 6 32452 0 0
+/my/orders/~d38 2 40 0 0
+/my/offers/~e27/docs/add 4 20280 0 0
+/parameters/default/update/id/31 1 3510 0 0
+/my/favourites 1 5111 0 0
+/orders/offered/view/id/52 6 33511 0 0
+/parameters/parameterGroups/create 1 3235 0 0
+/my/offers/~e24/docs 4 20897 0 0
+/offers/offerReviews/index 6 28829 0 0
+/site/siteSearch 1 4150 0 0
+/my/offers/~e20/docs 3 16182 0 0
+/orders/offered/view/id/45 3 17508 0 0
+/offers/default/checkDates 10 228 0 0
+/en/s 1 8284 0 0
+/my/offers/~e28/params 9 61016 0 0
+/how-it-works.html 14 96438 1 2
+/my/offers/~e19/photos 10 55579 0 0
+/parameters/default/update/id/39 1 3501 0 0
+/offers/default/addToFavourites 5 105 0 0
+/my/offers/~e27/params 2 11454 0 0
+/offers/offerFaq/edit/id/13 1 5419 0 0
+/offers/offerBlocks/index/id/24 1 5352 0 0
+/articles/default/update/id/3 1 5360 0 0
+/stories/pochemu-integrirovana-primernaya-struktura-marketingovogo-issledovaniya 11 58795 1 1
+/offers/offerBlocks/index/id/28 5 26741 0 0
+/offers/offerBlocks/index/id/16/s/2016-08-01 9 48286 0 1
+/parameters/default/update/id/47 1 3511 0 0
+/my/offers/options/~e32 1 5165 0 0
+/google934f41b121e3ead5.html 1 53 0 1
+/my/newpass 7 33707 0 0
+/my/offers/~e19/options 13 68105 0 0
+/offers/offerBlocks/index/id/27/s/2016-08-01 4 21434 0 0
+/offers/offerBlocks/daySchedule/offer_id/16 9 1760 0 0
+/my/offers/docs/~e4 1 5122 0 0
+/orders/payments/view/id/17 2 9408 0 0
+/offers/offerBlocks/index/id/19 12 64461 0 0
+/stories/featured-air 6 26874 2 2
+/offers/offerBlocks/index/id/26 1 5365 0 0
+/my/offers/~e19 14 125652 0 0
+/welcome 15 122036 4 3
+/my/offers/~e18/docs/add 2 10141 0 0
+/offers/default/activate/id/27 1 4679 0 0
+/my/offers/~e16/params 3 14112 0 0
+/parameters/default/update/id/48 1 3508 0 0
+/stories/featured-water 9 40073 1 1
+/orders/payments/requestWithdraw/sent/1 5 22587 0 0
+/site/subscribed 13 54566 0 0
+/parameters/default/update/id/30 1 3509 0 0
+/payment-security.html 4 42258 0 0
+/s/~o15 3 31699 1 1
+/my/offers/options/~e36 2 10561 0 0
+/my/offers/~e17/options 2 10486 0 0
+/resources/documents/ 9 20844 0 0
+/my/offers/~e26/docs 2 10604 0 0
+/my/stage-4 10 47660 0 0
+/parameters/default/update/id/53 1 3496 0 0
+/parameters/default/update/id/28 1 3531 0 0
+/siteVars/siteVars/update/id/1 2 7245 0 0
+/user/privateMessages/dialogWindow/id/26 7 21434 0 0
+/my/offers/~e19/docs/add 2 10149 0 0
+/offers/offerBlocks/add/id/16 4 80 0 0
+/offers/offerBlocks/daySchedule/offer_id/26 6 885 0 0
+/offers/offerComments/send 2 1462 0 0
+/parameters/default/update/id/40 1 3504 0 0
+/my/offers/~e17/params 10 68218 0 0
+/im~27 5 20645 0 0
+/my/offers/~e18/options 1 5378 0 0
+/offers/offerBlocks/index/id/18 1 5367 0 0
+/orders/default/admin/Orders%5Boffer_id%5D/20 3 12966 0 1
+/offers/offerFaq/edit/id/20 1 5092 0 0
+/my/offers/~e27/docs 6 32020 0 0
+/my/offers/options/~e18 3 16440 0 0
+/orders/default/admin/Orders%5Boffer_id%5D/17 1 4483 0 0
+/offers/offerReviews/archived 5 24488 0 0
+/im 11 44599 0 0
+/user/userAddresses/add 8 59648 0 0
+/offers/default/archived 13 67941 0 1
+/my/offers/~e26/params 5 33813 0 0
+/offers/offerFaq/add/id/27 2 9916 0 0
+/en/about.html 6 49945 0 0
+/my/offers/~e28 16 124332 0 0
+/offers/offerBlocks/daySchedule/offer_id/19 9 1115 0 0
+/parameters/default/update/id/38 1 3498 0 0
+/orders/offered/view/id/53 2 11983 0 0
+/de/subscription 1 20681 0 0
+/my/offers/~e28/options 4 21449 0 0
+/user/profile/firstPass/p/75487794af7caed55f2bc49655da3810 1 4844 0 0
+/offers/offerBlocks/index/id/27/master/go 1 5354 0 0
+/my/offers/~e19/docs 7 36764 0 0
+/my/offers/~e16 7 62820 0 0
+/orders/offered/index 12 59781 0 0
+/parameters/default/update/id/55 1 3492 0 0
+/stories/eksperimentalnyiy-sotsialnyiy-status-aktualnaya-natsionalnaya-zadacha 1 5612 0 1
+/sitemap 1 3952 0 0
+/my/offers/~e19/params 7 53693 0 1
+/offers/offerBlocks/add/id/26 1 20 0 0
+/parameters/default/update/id/32 1 3519 0 0
+/offers/offerBlocks/index/id/26/master/go 2 10722 0 0
+/stories/featured-ground 6 27597 1 2
+/parameters/default/update/id/77 1 3496 0 0
+/parameters/default/update/id/21 1 3495 0 0
+/admin 4 11762 1 0
+/u/1 2 12145 0 0
+/user/profile/savePhoto/type/photo2 3 251 0 0
+/parameters/default/update/id/88 2 6925 0 0
+/my/offers/~e24 3 23487 0 0
+/my/offers/~e24/photos 7 39760 0 0
+/es/about.html 2 33410 0 1
+/my/offers/~e17/docs 2 10780 0 0
+/offers/offerBlocks/index/id/20/master/go 1 5368 0 0
+/s/~o17 6 56981 1 1
+/s/~o20 1 6735 0 0
+/user/profile/firstPass/p/508dc6a76b30185a94830a9b49684ef3 1 4852 0 0
+/offers/offerBlocks/add/id/19 5 100 0 0
+/rights.html 6 64048 0 1
+/parameters/default/update/id/23 1 3494 0 0
+/s/~o18 8 79133 1 2
+/orders/default/archived 4 20893 0 0
+/themes/frontend/js/bootstrap-select/bootstrap-select.js.map 9 67062 0 0
+/my/offers/~e26/faq 4 21427 0 0
+/offers/offerBlocks/index/id/16 5 26790 0 0
+/my/offers/~e24/options 2 10480 0 0
+/parameters/default/update/id/54 2 6990 0 0
+/my/docs 12 62189 0 0
+/parameters/parameterGroups/admin 2 9079 0 0
+/offers/default/activate/id/26 1 4680 0 0
+/offers/offerBlocks/index/id/17 8 42787 0 0
+/my/offers/~e27/photos 9 49835 0 0
+/parameters/default/update/id/22 1 3496 0 0
+/parameters/default/update/id/45 1 3506 0 0
+/offers/offerReviews/add/id 1 4876 0 0
+/my/offers/~e27/options 6 31966 0 0
+/en/cookies.html 2 8352 0 0
+/parameters/default/admin/page/2 2 16337 0 0
+/user/privateMessages/add 2 42 0 0
+/my/offers/~e18/params 4 26744 0 0
+/site/unsubscribe 2 8434 0 0
+/de/about.html 6 100230 0 0
+/my/offers/options/~e34 1 5168 0 0
+/en 2 12398 0 0
+/articles/default/update/id/5 1 5590 0 0
+/my/offers/~e18 7 60554 0 0
+/my/offers/~e20/photos 1 5243 0 0
+/offers/default/order/id/19 1 4840 0 0
+/stories/kreativnyiy-protsess-strategicheskogo-planirovaniya-osnovnyie-momentyi 5 27549 0 0
+/user/profile/firstPass/p/9ddb02deb2d74fd9c12de1c9fe6f934e 1 4841 0 0
+/orders/payments/view/id/21 1 4688 0 0
+/subscription 17 85587 0 1
+/parameters/default/update/id/37 1 3507 0 0
+/offers/offerBlocks/index/id/27/s/2016-09-01 3 16142 0 0
+/parameters/default/update/id/13 2 7100 0 0
+/user/privateMessages/dialogWindow/id/27 5 9805 0 0
+/articles/default/admin 5 21693 0 0
+/offers/default/add 4 29513 0 0
+/user/privateMessages/setSeen 5 105 0 0
+/site/gMapsAutocomplete 13 4726 0 0
+/my/offers/~e24/params 9 58561 0 0
+/offers/offerBlocks/index/id/16/s/2016-09-01 2 10750 0 0
+/orders/default/admin/Orders%5Boffer_id%5D/19 1 4442 0 0
+//offers/offerPhotos/setFullOrder 1 21 0 0
+/my/offers/~e26/photos 2 10762 0 0
+/my/offers/~e17/photos 17 94702 2 2
+/offers/offerBlocks/index/id/27/s/2016-10-01 1 5357 0 0
+/my/offers/options/~e30 4 21453 0 0
+/offers/offerBlocks/add/id/17 1 20 0 0
+/de 1 6279 0 0
+/siteVars/siteVars/update/id/7 1 3475 0 0
+/my/offers/~e27/faq 7 37709 0 0
+/offers/default/activate/id/28 1 4679 0 0
+/my/offers/options/~e29 1 5600 0 0
+/offers/offerBlocks/daySchedule/offer_id/27 5 993 0 1
+/feedback 7 36533 0 0
+/orders/payments/requestWithdraw 15 61335 0 0
+/offers/offerBlocks/index/id/27 11 58952 0 1
+/my/offers/~e28/docs 2 10411 0 0
+/im~26 7 28972 0 0
+/my/offers/docs/~e23 1 5115 0 0
+/offers/offerFaq/edit/id/19 2 10182 0 0
+/offers/offerBlocks/index/id/19/s/2016-07-01 2 10758 0 0
+/user/clients/getData 1 68 0 0
+/my/offers/~e24/docs/add 1 5015 0 0
+/de/how-it-works.html 3 49887 1 0
+/orders/payments/outcome 14 71545 0 1
+END_SIDER

@@ -1,0 +1,874 @@
+AWSTATS DATA FILE 7.4 (build 20140726)
+# If you remove this file, all statistics for date 201611 will be lost/reset.
+# Last config file used to build this data file was /home/getupway/tmp/awstats/awstats.getupway.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2009                
+POS_TIME 2687                
+POS_VISITOR 12986               
+POS_DAY 17527               
+POS_DOMAIN 3608                
+POS_LOGIN 4104                
+POS_ROBOT 4259                
+POS_WORMS 4882                
+POS_EMAILSENDER 5013                
+POS_EMAILRECEIVER 5156                
+POS_SESSION 18345               
+POS_SIDER 18553               
+POS_FILETYPES 5291                
+POS_DOWNLOADS 5617                
+POS_OS 6726                
+POS_BROWSER 6955                
+POS_SCREENSIZE 7845                
+POS_UNKNOWNREFERER 7919                
+POS_UNKNOWNREFERERBROWSER 8574                
+POS_ORIGIN 8866                
+POS_SEREFERRALS 9008                
+POS_PAGEREFS 9152                
+POS_SEARCHWORDS 9438                
+POS_KEYWORDS 9590                
+POS_MISC 2350                
+POS_ERRORS 9649                
+POS_CLUSTER 3960                
+POS_SIDER_404 9809                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20161201011845 32 5228 9413995579251
+FirstTime 20161101100134
+LastTime 20161130173853
+LastUpdate 20161201130036 32 0 31 0 0
+TotalVisits 136                 
+TotalUnique 99                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 117                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+JavaEnabled 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+QuickTimeSupport 0 0 0
+FlashSupport 0 0 0
+PDFSupport 0 0 0
+AddToFavourites 0 84 0
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 1 51 4568 56 106 31577699
+1 3 3 27392 76 111 57286972
+2 2 2 8502 82 110 2749464
+3 49 49 213736 78 144 4089221
+4 6 69 251441764 56 104 4169905
+5 8 8 34005 88 169 15055419
+6 4 4 31630 69 161 5728194
+7 13 103 252765004 398 478 8862164
+8 187 487 290047435 205 327 6112551
+9 132 1038 9254848 97 225 8758404
+10 535 1374 2638752394 185 273 8583181
+11 102 508 544284403 79 158 5845756
+12 6 48 1430878 44 115 3016206
+13 15 138 251460734 58 166 10787697
+14 48 123 71976026 78 187 7510420
+15 187 519 605549535 139 277 10817879
+16 119 307 351914656 104 195 5496617
+17 57 407 740198475 95 217 8034835
+18 118 1765 3504050016 132 229 6325677
+19 178 1022 5448514926 73 155 6211719
+20 70 458 2489772000 78 113 3520663
+21 18 23 480794 71 158 5673040
+22 3 3 12753 54 92 10872212
+23 7 47 1539422 132 174 4103959
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 20
+il 939 5035 7443971078
+ua 767 3013 2153309451
+us 115 369 8086181
+ru 8 76 1512388
+fr 6 6 25499
+ro 5 5 21251
+lu 4 4 17003
+it 4 4 31558
+nl 3 3 12750
+de 3 27 935379
+pl 3 3 12750
+ie 2 2 15043
+lr 2 2 8502
+ca 1 1 18892
+br 1 1 4253
+id 1 1 4250
+se 1 1 4248
+co 1 1 4253
+dk 1 1 4252
+in 1 1 4255
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 12
+googlebot 798 17577518 20161130095220 41
+bot[\s_+:,\.\;\/\\-] 667 93250373 20161130203155 115
+[\s_+:,\.\;\/\\-]bot 664 96619839 20161129180020 0
+bingpreview 107 3573696 20161128085126 0
+spider 61 1015354 20161130105743 1
+google[_+\s]web[_+\s]preview 52 1442148 20161105083349 0
+robot 16 440478 20161115122722 0
+unknown 15 3285 20161129234450 15
+googlebot\-image 5 636833 20161121203715 0
+no_user_agent 4 56863 20161121093108 1
+php 3 40245 20161123095518 0
+netcraft 1 18892 20161116021914 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 13
+gif 24 74431 0 0
+png 1506 1405367 0 0
+jpg 1033 200249823 0 0
+map 2 67062 0 0
+js 1887 49354120 0 0
+Unknown 1663 7010397 0 0
+eot 19 169112 0 0
+mp4 42 7457400926 0 0
+woff 2 178152 0 0
+ttf 1 150920 0 0
+html 138 799337 0 0
+css 2196 22924510 0 0
+woff2 43 2970576 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 18
+/resources/articles/home-video-1.mp4 14 87 3393841098
+/resources/articles/home-video-3.mp4 11 78 2845509785
+/resources/articles/home-video-2.mp4 11 84 3083298546
+/resources/documents/20160710142750_192045c0f9c3.docx 2 0 30960
+/resources/documents/20160924030749_359f253e4435a.docx 1 0 15480
+/resources/documents/20160630025146_11f58626413e.docx 1 0 29324
+/resources/files/20141131145831_f400ec6351.txt 1 0 104
+/resources/documents/20160629152609_fb029c4f954.docx 1 0 29324
+/resources/files/20141138145838_6b1af7e1d.txt 1 0 104
+/resources/documents/20161006153743_d1bc407d302b8.docx 1 0 25882
+/resources/test.txt 1 0 19
+/resources/documents/20160924032147_818bc986748f.docx 1 0 15480
+/resources/documents/20160629175655_ed3c0c1d.ppt 1 0 3465728
+/resources/documents/20160710143023_7cf63f2b4f538.docx 1 0 20531
+/resources/documents/20160629164051_f8c625ed88c.docx 1 0 20531
+/resources/documents/20160629143135_7b728463.docx 1 0 29324
+/resources/documents/20161007150905_0b9fd0f5dcd.docx 1 0 15480
+/resources/documents/20160823031434_93429ed6441b0.docx 1 0 25882
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 12
+win8 4174 623
+macosx8 54 4
+winnt 1705 650
+macosx 105 5
+win8.1 30 6
+ios_ipad 51 2
+winlong 4 4
+winxp 2 2
+win7 2333 470
+linux 90 50
+Unknown 58 31
+linuxandroid 199 21
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 40
+firefox2.0.0.11 1 1
+netscape4.5 1 1
+chrome49.0.2623.87 1 1
+Unknown 7 5
+chrome39.0.2171.95 23 23
+chrome37.0.2062.120 2 2
+msie10.0 2519 303
+chrome37.0.2109.10 1 1
+netscape 23 23
+chrome34.0.1847.116 1 1
+chrome54.0.2840.68 57 3
+chrome14.0.809.0 1 1
+firefox3.6.3 3 3
+chrome11.0.669.0 1 1
+chrome44.0.2403.89 1 1
+mozilla 74 9
+opera40.0.2308.90 93 17
+firefox49.0 638 153
+chrome28.0.1500.71 1 1
+firefox28.0 5 5
+msie11.0 2 2
+chrome49.0.2623.112 54 4
+chrome49.0.2623.75 28 28
+firefox33.0 1 1
+chrome31.0.1650.57 3 3
+chrome54.0.2840.71 2275 709
+chrome52.0.2743.116 21 21
+chrome54.0.2840.87 629 135
+chrome40.0.2214.115 27 3
+chrome54.0.2840.99 1312 333
+firefox50.0 104 4
+msie9.0 688 35
+firefox14.0.1 11 11
+firefox46.0 1 1
+chrome17.0.1025.133 1 1
+chrome41.0.2228.0 1 1
+chrome40.0.2214.114 52 3
+chrome27.0.1453.90 2 2
+safari 51 2
+chrome44.0.2403.133 89 14
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 10
+python-requests/2.12.1 20161121121635
+Mozilla/5.0_(compatible)_Feedfetcher-Google;_(_http://www.google.com/feedfetcher.html) 20161107131954
+WWW-Mechanize/1.73 20161113221823
+visionutils/0.2 20161123095519
+facebookexternalhit/1.1 20161123095517
+Mozilla/5.0_(compatible;_bingbot/2.0;__http://www.bing.com/bingbot.htm) 20161102134245
+Mozilla/5.0_(compatible;_Google-Site-Verification/1.0) 20161108132118
+SalesIntelligent_(_https://www.salesintelligent.com) 20161114132829
+Mozilla/5.0_(compatible;_vkShare;__http://vk.com/dev/Share) 20161111182132
+Mozilla 20161122032332
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 5
+facebookexternalhit/1.1 20161123095517
+visionutils/0.2 20161123095519
+WWW-Mechanize/1.73 20161113221823
+python-requests/2.12.1 20161121121635
+SalesIntelligent_(_https://www.salesintelligent.com) 20161114132829
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 206 254
+From1 0 0
+From2 0 0
+From3 11 12
+From4 1651 8539
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 5
+https://www.facebook.com 5 5
+http://vk.com/away.php 3 3
+http://l.facebook.com/lsr.php 1 2
+http://hundejo.com 1 1
+http://hvd-store.com 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 6
+400 3 57783
+403 10 74294
+500 9 389237
+206 60 4723939
+302 897 16800
+404 988 18514273
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 132
+/blog/ 4 -
+/themes/frontend/img/sitemap-bg.jpg 12 http://getupway.com/sitemap
+/de/u/3 1 -
+/news.php 1 -
+/es/s/~o26 2 -
+/login 1 -
+/de/s/~o15 3 -
+/stories/kak-ya-nashel-avto-vo-frantsii 2 -
+/en/payment-security.html 2 -
+/en/s/~o3 1 -
+/en/u/26 3 -
+/wp-cache.php 1 -
+/s/~o16/ 620 http://uytmaster.ru/top/santech
+/wp-content/plugins/wp-cache.php 1 -
+/s/~o20 2 -
+/themes/account/img/blank_offer.png 8 http://getupway.com/offers/default/archived
+/blog/xmlrpc.php 1 -
+/tmp.php 1 -
+/wordpress/ 2 -
+/de/s/~o19 1 -
+/es/s/~o6 1 -
+/es/s/~o18 1 -
+/es/u/3 1 -
+/language/en 1 -
+/en/s/~o15 3 -
+/wp/wp-login.php 3 -
+/oils-special-liquids-fiat.html 1 -
+/s/~o6 1 -
+/en/s/~o26 2 -
+/de/u/4 1 -
+/es/u/27 2 -
+/de/u/27 1 -
+/user/user/login 6 -
+/s/~o12 1 -
+/user/user/login/language/ru 1 -
+/google803d229ea207219a.html 1 -
+/s/~o18 3 -
+/en/u/4 1 -
+/language/ru 1 -
+/user/user/registration/language/en 1 -
+/en/u/27 2 -
+/configurationbak.php 1 -
+/themes/frontend/img/logo-mail.png 7 -
+/user/user/registration/language/de 1 -
+/en/s/~o14 1 -
+/u/3 1 -
+/user/user/registration 6 -
+/en/u/3 1 -
+/language/de 1 -
+/de/s/~o16 3 -
+/cars/index 6 http://getupway.com/sitemap
+/s/~o15 1 -
+/sqlibak.php 1 -
+/cms/wp-login.php 4 -
+/downloader/ 2 http://GETUPWAY.COM/downloader/
+/maill.php 1 -
+/en/about.html 3 -
+/images/google-assist.php 1 -
+/resources/offers/400_20160703083731_cce3ddb6eaa.jpg 1 -
+/credit.html 1 -
+/en/u/1 2 -
+/test/wp-login.php 4 -
+/de/s/~o3 1 -
+/stockCars/index 1 -
+/wordpress/wp-login.php 4 -
+/en/how-it-works.html 3 -
+/.git/HEAD 1 -
+/en/cookies.html 3 -
+/es/s/~o20 1 -
+/warranty.html 4 http://getupway.com/sitemap
+/s/~o17 2 -
+/de/s/~o7 1 -
+/s/~o13 1 -
+/en/s/~o18 1 -
+/en/s/~o24 2 -
+/s/~o3 2 -
+/en/currencies 5 -
+/infos.php 1 -
+/en/s/~o7 1 -
+/images/xxx.php 1 -
+/es/s/~o16 5 -
+/en/subscription 1 -
+/de/s/~o14 1 -
+/de/s/~o6 1 -
+/en/s/~o16 4 -
+/modules/ 1 http://getupway.com/modules/
+/en/feedback 3 -
+/blog/wp-login.php 4 -
+/en/rights.html 4 -
+/wp-content/plugins/myshe.php 1 -
+//wp-login.php 1 -
+/web/wp-login.php 4 -
+/themes/frontend/js/plugins/toastr/toastr.js.map 22 -
+/functions.php 1 -
+/new/wp-login.php 4 -
+/de/s/~o18 1 -
+/user/user/login/language/en 1 -
+/es/s/~o27 2 -
+/s/~o16 2 -
+/en/wp-login.php 4 -
+/en/s/~o6 1 -
+/u/26 1 -
+/u/27 2 -
+/wp-login.php 9 -
+/save-my-pass-please 5 -
+/es/s/~o14 1 -
+/user/user/login/language/de 1 -
+/home/wp-login.php 4 -
+/es/u/4 1 -
+/de/s/~o26 2 -
+/main/wp-login.php 4 -
+/wp-includes/ 1 http://getupway.com/wp-includes/
+/blogs/wp-login.php 3 -
+/en/s 12 -
+/user/user/login/language/es 1 -
+/themes/account/img/pin-success.png 40 http://getupway.com/user/profile/stagePublic/language/ru
+/en 18 -
+/wp-main.php 1 -
+/news/wp-login.php 4 -
+/es/s/~o19 1 -
+/blog/robots.txt 2 -
+/administrator/includes/readmy.php 1 -
+/en/lang 1 -
+/wp/ 2 -
+/en/s/~o20 1 -
+/es/u/26 2 -
+/accessories.html 1 -
+/u/2 1 -
+/site/wp-login.php 4 -
+/de/s/~o20 2 -
+/s/~o7 1 -
+/xmlrpc.php 3 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 117
+94.158.155.237 467 1528 1587531825 20161107170421
+94.158.149.20 209 326 13271582 20161104152036
+80.246.133.109 188 202 360075 20161110102607
+31.210.188.26 142 465 766000555 20161118213613
+80.246.130.89 123 333 341947271 20161110161530
+141.226.161.219 94 903 1889370332 20161127201204
+80.246.130.163 76 190 2055974 20161123082126
+80.246.130.49 73 242 178682753 20161109102342
+213.151.53.59 73 401 1361672312 20161110200636
+93.76.198.125 53 956 297843202 20161126171849
+141.226.162.117 51 1427 2219170721 20161123193305
+64.79.100.14 46 46 200987 20161122032332
+31.210.187.97 33 126 6716991 20161120194049
+195.66.197.201 27 128 250357018 20161104155520
+80.246.133.195 21 36 188546 20161123100008
+80.246.133.99 14 159 169996019 20161110101547
+80.246.133.1 13 17 69591 20161109104723
+80.246.133.77 13 267 247521115 20161121191854
+69.58.178.58 11 11 211499 20161118142508
+66.249.93.27 9 9 38250 20161130051237
+66.249.93.26 8 8 34008 20161128094203
+66.249.93.25 7 7 29757 20161129045340
+80.246.133.146 6 6 1683 20161110135304
+54.166.145.162 6 46 1520546 20161129234453
+76.89.155.73 4 54 1431396 20161126175552
+66.220.145.246 0 14 268521 
+66.249.92.128 1 1 53 20161108132118
+178.162.205.5 2 2 37752 20161125152053
+66.220.145.243 1 13 567230 20161123095521
+164.132.55.95 2 2 8501 20161109212345
+195.211.23.220 0 1 2328 
+54.154.140.213 1 1 4250 20161121121635
+151.80.67.83 1 1 4181 20161130110022
+185.100.85.101 1 1 4251 20161117033010
+109.163.234.8 1 1 4252 20161113213712
+195.211.23.214 0 2 2791 
+80.246.130.175 2 64 124914071 20161110115001
+164.132.51.91 1 1 18876 20161107044946
+80.246.133.128 2 3 34598 20161110120631
+162.247.72.202 1 1 4250 20161120063455
+195.211.23.209 1 2 4849 20161104094302
+158.69.225.35 1 1 18892 20161130105744
+195.211.23.206 1 1 4251 20161111182131
+79.182.144.9 3 53 1427150 20161112102101
+77.247.181.162 1 1 4251 20161104120803
+66.220.145.245 0 21 369955 
+195.211.23.215 0 2 2839 
+134.249.159.113 1 1 4248 20161118160107
+178.136.60.4 2 52 1422898 20161111182123
+80.64.173.162 1 1 4250 20161107020822
+94.23.75.242 1 1 4249 20161120075539
+176.31.149.121 2 2 8498 20161127032120
+213.136.78.176 1 25 897627 20161115072657
+66.249.83.95 0 1 2553 
+188.120.154.181 2 68 128343430 20161109043643
+45.32.131.61 1 1 18876 20161105082544
+212.117.180.130 1 1 4250 20161109153407
+195.211.23.218 0 1 2370 
+212.117.180.21 1 1 4251 20161124170741
+94.242.246.24 1 1 4252 20161111024544
+80.246.133.14 2 51 1255372 20161119092053
+94.23.169.94 1 1 4251 20161116171834
+54.81.202.128 1 1 18876 20161124102129
+177.54.51.210 1 1 4253 20161120081205
+54.161.107.49 1 1 18876 20161102061331
+109.63.208.2 2 52 1422895 20161125112922
+95.213.184.35 1 1 18876 20161104161657
+54.201.97.113 1 1 4250 20161108044359
+66.102.9.30 2 2 8500 20161128161348
+173.252.115.154 0 1 16363 
+35.163.98.7 1 1 4252 20161113221823
+173.252.115.151 0 1 16363 
+217.12.201.109 1 1 18876 20161102110219
+109.163.234.9 1 1 4249 20161106114820
+195.211.23.219 0 1 2865 
+213.32.91.89 1 1 4252 20161126134540
+72.229.114.62 4 104 2845790 20161130082714
+195.211.23.208 0 1 1844 
+162.212.168.124 1 1 18892 20161118014007
+194.105.145.91 3 53 1427906 20161107092729
+186.119.117.235 1 1 4253 20161127160719
+197.231.221.211 2 2 8502 20161122175603
+80.246.130.65 2 43 1387779 20161108121048
+66.102.9.54 1 1 4251 20161102112220
+212.150.10.138 1 51 4568 20161113001208
+104.207.150.177 1 1 18876 20161114080504
+66.249.83.66 0 2 5106 
+54.196.14.116 1 1 18876 20161116100346
+83.217.25.187 1 1 26243 20161114135300
+195.154.146.225 1 1 4252 20161118064026
+66.220.145.244 1 12 365163 20161123095525
+172.241.172.198 1 1 4313 20161105184549
+195.211.23.210 0 1 2246 
+31.13.100.115 1 1 7523 20161123095517
+94.242.246.23 1 1 4250 20161130071547
+37.0.127.44 1 1 4251 20161108141013
+80.246.130.54 2 35 1353009 20161105151455
+195.211.23.217 0 2 2873 
+66.249.83.64 0 1 2553 
+195.211.23.216 0 2 3285 
+178.217.187.39 3 3 12750 20161116011101
+91.210.147.209 1 1 4251 20161121010642
+31.13.100.112 1 1 7520 20161123095516
+66.102.9.1 1 1 4249 20161130173853
+192.154.110.170 1 1 4251 20161110220115
+80.246.133.228 3 57 1497163 20161101113013
+103.248.117.65 1 1 4255 20161102094241
+194.105.145.87 3 52 1427645 20161101165000
+176.126.252.12 2 2 8499 20161128100456
+77.247.181.163 1 1 4249 20161105034927
+46.166.138.145 1 1 4250 20161103225725
+52.3.246.202 1 1 4250 20161114132829
+195.211.23.213 0 2 1019 
+203.80.15.4 1 1 4250 20161127205311
+195.211.23.212 0 2 2313 
+188.165.29.82 1 1 4249 20161111151840
+171.25.193.132 1 1 4248 20161103072117
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 30
+20161101 175 1065 2758790856 5
+20161102 12 91 321638570 7
+20161103 169 278 285931510 5
+20161104 240 458 515366389 8
+20161105 7 40 1388948 6
+20161106 3 3 12749 3
+20161107 142 293 2896301 7
+20161108 6 47 1400585 5
+20161109 134 1084 732189070 8
+20161110 410 1138 3223584688 9
+20161111 6 65 1453588 5
+20161112 8 108 2862795 4
+20161113 4 54 17322 4
+20161114 4 4 53619 4
+20161115 2 26 901878 2
+20161116 3 3 27376 3
+20161117 1 1 4251 1
+20161118 157 454 1512124952 6
+20161119 2 51 1255372 1
+20161120 36 129 6729743 4
+20161121 15 266 366238178 3
+20161122 48 48 224114 3
+20161123 153 1662 4189485792 8
+20161124 3 3 27379 3
+20161125 3 53 1441771 2
+20161126 8 108 2862797 4
+20161127 98 865 3520436143 5
+20161128 3 3 12750 3
+20161129 7 47 1524797 2
+20161130 9 109 2881613 6
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+15mn-30mn 4
+2mn-5mn 1
+1h+ 11
+5mn-15mn 2
+0s-30s 110
+30s-2mn 3
+30mn-1h 5
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 230
+/hello 189 1056034 106 89
+/s 175 791882 2 3
+/site/gMapsAutocomplete 118 41349 0 0
+/ 108 645824 14 3
+/user/privateMessages/ajaxList 95 45829 1 1
+/user/privateMessages/getNewMessages 95 3705 0 1
+/my/offers 61 307638 0 1
+/my/orders 48 217888 1 3
+/my/stage-1 44 394600 1 3
+/themes/frontend/fonts/fontawesome-webfont.woff2 43 2970576 1 10
+/user/profile/stagePublic 39 207193 1 1
+/my/stage-3 34 168078 0 1
+/admin/user 28 135365 0 0
+/welcome 26 141841 0 1
+/my/stage-2 26 154985 0 0
+/sitemap 18 68287 0 0
+/listLanguages/getData 18 636 0 0
+/orders/default/archived 17 78762 0 0
+/my/stage-4 15 67492 0 0
+/themes/frontend/fonts/fontawesome-webfont.eot 15 150440 0 1
+/parameters/default/admin 14 114213 0 0
+/site/siteSearch 13 49907 0 0
+/admin/categories 13 120176 0 0
+/my/offers/~e32/photos 13 68536 0 0
+/my/offers/~e41/photos 12 63024 0 0
+/user/profile/savePhoto/type/photo2 1 90 0 0
+/s/~o39/order 1 4570 0 0
+/offers/default/archived/language/ru 5 24088 0 0
+/user/admin/update/id/1 3 20026 0 0
+/user/admin/update/id/46 2 13179 0 0
+/my/offers/~e41/docs 3 14638 0 0
+/user/privateMessages/add 5 105 0 0
+/my/offers/~e43/docs 3 14555 0 0
+/admin 11 32683 1 0
+/offers/offerBlocks/index/id/41 7 35379 0 0
+/parameters/parameterValues/admin/id/68 1 4743 0 0
+/user/userAddresses/index 3 14015 0 0
+/orders/payments/income 3 13893 0 0
+/admin/places/create 1 4877 0 0
+/offers/offerPhotos/admin/id/44 1 3703 0 0
+/user/clients/getData 1 22 0 0
+/user/admin/update/id/62 2 12838 0 0
+/offers/offerBlocks/index/id/44/s/2016-11-01 1 4990 0 0
+/user/profile/firstPass/p/1cd744a4b07d7968fb807c10d7d40cbd 1 4418 0 0
+/user/userFavourites/admin/id/62 3 12372 0 0
+/admin/currencies 3 11620 0 0
+/staticPages/default/admin 4 20810 0 0
+/offers/default/update/id/43 1 5779 0 0
+/user/userReviews/update/id/1 1 3495 0 0
+/user/profile/firstPass/p/56b1c590c29ccb229126611d682f2ede 1 4410 0 0
+/my/offers/~e43/params 1 6457 0 0
+/my/offers/~e32 1 7453 0 0
+/cookies.html 3 11824 0 0
+/user/privateMessages/dialogWindow/id/49 1 1586 0 0
+/admin/paymentTypes 6 27709 0 0
+/parameters/default/update/id/73 1 3484 0 1
+/orders/offered/view/id/67 2 9488 0 0
+/im~49 1 3857 0 0
+/my/offers/~e34/options/add 2 9410 0 0
+/admin/paymentTypes/1/update 1 3769 0 0
+/my/offers/~e44 7 52229 0 0
+/offers/default/checkDates 7 178 0 0
+/my/docs 5 24426 0 0
+/user/userReviews/admin/id/46/sort/parameter_1 1 4131 0 0
+/my/offers/~e43 9 67090 0 0
+/admin/paymentTypes/2/update 3 11291 0 0
+/offers/offerBlocks/index/id/44/master/go 3 14970 0 0
+/admin/places 3 12013 0 0
+/s/~o43/order 4 17421 0 0
+/my/offers/~e43/faq 1 4772 0 0
+/my/offers/~e41/faq 6 28961 0 0
+/user/admin/admin 3 14318 0 0
+/offers/default/archived 7 32142 1 0
+/user/userReviews/admin/id/62 3 11838 0 0
+/offers/offerBlocks/daySchedule/offer_id/39 1 113 0 0
+/siteVars/siteVars/admin 9 38323 0 0
+/google934f41b121e3ead5.html 1 53 1 1
+/orders/default/update/id/65 1 1915 0 0
+/offers/offerBlocks/index/id/39 2 9962 0 0
+/offers/offerBlocks/index/id/34 3 14882 0 0
+/parameters/parameterValues/admin/id/6 2 9858 0 0
+/parameters/default/update/id/11 1 3573 0 0
+/offers/offerBlocks/add/id/41 5 100 0 0
+/s/~o38 2 12060 0 0
+/offers/offerBlocks/add/id/39 1 20 0 0
+/offers/default/activate/id/43 1 4366 0 0
+/parameters/default/create 1 3488 0 0
+/user/userAddresses/admin/id/62 2 7602 0 0
+/s/~o41/order 1 4361 0 0
+/offers/default/admin 11 65038 0 0
+/orders/payments/requestWithdraw 1 4347 0 0
+/s/~o41 7 55958 0 1
+/assets/efb289f8/redactor-font.eot 4 18672 0 0
+/offers/offerComments/admin/id/44 1 4192 0 0
+/s/~o39 8 56694 0 0
+/site/subscribed 3 11532 0 0
+/my/offers/~e42 2 14926 0 0
+/offers/offerBlocks/index/id/44/s/2016-12-01 1 5008 0 0
+/offers/offerReviews/admin/id/44 1 3890 0 0
+/offers/offerReviews/index 7 31309 0 0
+/themes/frontend/fonts/fontawesome-webfont.woff 2 178152 0 1
+/my/offers/~e34/faq 1 5091 0 0
+/offers/offerBlocks/index/id/43/s/2016-12-01 1 5008 0 0
+/s/~o35 2 17012 0 0
+/user/profile/stagePublic/language/ru 3 16467 0 0
+/siteVars/siteVars/update/id/5 2 7014 0 0
+/my/offers/~e43/docs/add 1 4595 0 0
+/offers/offerOptions/admin/id/44 2 8240 0 0
+/my/offers/~e44/params 7 44700 0 0
+/offers/offerReviews/archived/language/ru 5 22360 0 0
+/staticPages/default/update/id/2 1 4500 0 0
+/my/offers/~e34/photos 2 10338 0 0
+/articles/default/update/id/6 3 15824 0 0
+/themes/frontend/fonts/fontawesome-webfont.ttf 1 150920 0 0
+/admin/categories/create 1 5218 0 0
+/offers/offerFaq/edit/id/30 1 4531 0 0
+/orders/withdraws/create 1 6028 0 0
+/stories 6 77699 1 1
+/my/orders/~e63 1 5776 0 0
+/u/60 3 15323 0 0
+/popups/default/admin 3 10856 0 0
+/u/64 2 9035 0 0
+/my/offers/~e41/params 2 12980 0 0
+/offers/default/addToFavourites 5 105 0 0
+/admin/listLanguages 4 21380 0 0
+/stories/featured-air 2 8040 0 0
+/s/~o32 7 46102 0 2
+/my/offers/~e39 1 8239 0 0
+/my/offers/~e41/options 1 4933 0 0
+/parameters/parameterGroups/update/id/1 3 9640 0 0
+/offers/default/update/id/34 1 6427 0 0
+/rights.html 4 28754 0 1
+/s/~o36 5 36725 3 3
+/parameters/default/update/id/6 1 3613 0 0
+/how-it-works.html 9 47847 0 1
+/my/offers/~e41/docs/add 3 13933 0 0
+/offers/offerReviews/archived 5 22363 0 0
+/s/~o36/order 2 9266 0 0
+/orders/payments/income/language/ru 1 4676 0 0
+/user/login/socialFB 2 296 0 0
+/offers/offerBlocks/index/id/43/s/2016-11-01 1 4990 0 0
+/offers/offerBlocks/index/id/42 1 4986 0 0
+/offers/offerReviews/update/id/1 2 6978 0 0
+/ru 3 19331 1 0
+//offers/offerPhotos/setFullOrder 1 21 0 0
+/user/notifications/admin/id/62 2 7426 0 0
+/offers/offerReviews/admin/id/34 3 12174 0 0
+/my/settings 3 13405 0 0
+/offers/default/update/id/44 3 17256 0 0
+/about.html 11 56804 1 2
+/my/offers/~e34/params 1 6494 0 0
+/offers/offersParameterValues/admin/id/44 1 3205 0 0
+/admin/listCountries/1/update 2 7437 0 0
+/s/~o34/order 1 4683 0 0
+/user/privateMessages/dialogWindow/id/64 2 2909 0 0
+/offers/offerReviews/index/language/ru 1 4471 0 0
+/orders/offered/index 6 28079 0 0
+/subscription 4 18214 0 0
+/offers/offerBlocks/index/id/42/s/2016-10-01 2 9988 0 0
+/my/newpass 1 4375 0 0
+/stories/mejlichnostnyiy-kontent-osnovnyie-momentyi 4 19750 0 0
+/user/privateMessages/dialogWindow/id/1 1 1657 0 0
+/u/46 4 22693 0 0
+/my/offers/~e43/photos 5 25239 0 0
+/popups/default/create 1 3999 0 0
+/offers/offerBlocks/index/id/43/master/go 1 4990 0 0
+/parameters/parameterGroups/admin 9 41217 0 0
+/admin/places/1/update 2 9795 0 0
+/s/~o34 7 56111 0 0
+/parameters/parameterGroups/update/id/2 2 6430 0 0
+/feedback 2 9615 0 0
+/offers/offerBlocks/index/id/44 3 14952 0 0
+/ru/s/~o39 1 7505 0 0
+/offers/offerReviews/archived/language/de 1 4472 0 0
+/user/userReviews/admin/id/46 1 4116 0 0
+/orders/default/admin 12 58220 0 1
+/my/offers/~e35 1 8197 0 0
+/admin/listCountries 5 29250 0 0
+/site/unsubscribe 1 3888 0 0
+/payment-security.html 2 8231 0 0
+/siteVars/siteVars/update/id/1 1 3819 0 0
+/admin/categories/132/update 5 26120 0 0
+/metaTags/default/update/id/1 3 11989 0 0
+/user/admin/update/id/50 3 19323 0 0
+/offers/offerComments/admin/id/34 2 8404 0 0
+/im 8 30225 0 1
+/user/userDocuments/admin/id/62 2 8534 0 0
+/offers/offerBlocks/index/id/42/master/go 1 4993 0 0
+/offers/offerFaq/admin/id/44 1 4492 0 0
+/metaTags/default/admin 4 15252 0 0
+/user/profile/savePhoto/type/photo3 1 89 0 0
+/my/offers/~e34/docs 3 14601 0 0
+/admin/listLanguages/83/update 2 7386 0 0
+/my/offers/~e42/params 1 6433 0 0
+/recover-pass 4 30288 0 0
+/stories/featured-water 1 4047 0 0
+/stories/kreativnyiy-mediamiks-v-XXI-veke 1 4860 0 0
+/orders/payments/outcome 2 9220 0 0
+/ru/s/~o34 2 16712 0 0
+/user/notifications/admin/id/46 1 3713 0 0
+/im~1 2 7710 0 0
+/my/offers/~e43/options 2 9910 0 0
+/orders/withdraws/admin 3 12420 0 0
+/my/offers/~e34 6 48828 0 1
+/offers/default/add 10 70289 0 0
+/parameters/default/update/id/60 1 3495 0 0
+/my/offers/~e44/photos 2 9670 0 0
+/user/profile/firstPass/p/8509378ec9aead7617d3d99ed4b3f68f 1 4405 0 0
+/my/offers/~e41 6 51669 0 0
+/admin/subscribers 8 34820 0 0
+/s/~o43 11 66542 0 0
+/staticPages/default/update/id/5 2 9012 0 0
+/parameters/default/update/id/7 1 3593 0 0
+/orders/payments/requestWithdraw/sent/1 1 4181 0 0
+/user/userReviews/admin/id/50 1 3947 0 0
+/offers/offerFaq/add/id/41 1 4515 0 0
+/u/1 2 10359 0 0
+/articles/default/admin 4 17530 0 0
+/user/profile/firstPass/p/ca841a66d68e58d1f57a059ae1b03310 1 4402 0 0
+/user/profile/firstPass/p/01363b95cc802d0f7bfb9261457b5968 2 8830 0 0
+/my/favourites 1 5009 0 0
+/offers/offerBlocks/index/id/42/s/2016-11-01 1 4992 0 1
+/u/47 3 15324 0 0
+/offers/offerReviews/archived/language/es 1 4472 0 0
+/my/offers/~e34/options 4 19872 0 0
+/offers/offerBlocks/daySchedule/offer_id/41 7 1331 0 0
+/my/offers/~e33 1 7540 0 0
+/parameters/default/update/id/65 1 3491 0 0
+/themes/frontend/js/bootstrap-select/bootstrap-select.js.map 2 67062 0 0
+/im~64 2 7660 0 0
+END_SIDER

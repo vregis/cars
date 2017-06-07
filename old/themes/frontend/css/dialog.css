@@ -1,0 +1,110 @@
+html, body {
+    overflow: hidden;
+    height: auto;
+}
+
+.dialog-container {
+    margin: 0 30px 0 0;
+    position: relative;
+}
+
+    .dialog-container .dialog-shadow {
+        margin-right: 30px;
+        background: url(../img/gradient-180.png) 0 0 repeat-x;
+        width: 100%;
+        height: 80px;
+        z-index: 30;
+        position: absolute;
+    }
+
+#dialog-box {
+    margin: 0 -30px 0 0;
+    padding: 0 20px 0 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    z-index: 10;
+    position: relative;
+}
+
+.message-container {
+    margin: 0px 0;
+    padding: 10px;
+}
+
+.message-container.unseen, .message-container.unseen-passive {
+    background-color: #f0f4f7;
+}
+
+.message-profile {
+    padding-bottom: 10px;
+    padding-right: 0;
+}
+
+.message-text {
+    padding: 3px 15px;
+}
+
+    .message-text h5 {
+        margin: 0 0 5px 0;
+        font-family: "Roboto", sans-serif;    
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+    }
+
+        .message-text h5 a {
+            text-decoration: none;
+            color: #019d56;
+        }
+
+        .message-text h5 a.remove-link {
+            color: #eaeaea;
+            float: right;
+            display: none;
+        }
+
+        .message-container:hover .message-text h5 a.remove-link {
+            display: inline;
+        }
+
+        .message-container .message-text h5 a.remove-link:hover {
+            color: #333333;
+        }
+
+    .message-text p {
+        font-size: 12px;
+        line-height: 16px;
+        word-wrap: break-word;
+    }
+
+    .message-text p.date {
+        margin: 0 0 10px 0;
+        font-size: 11px;
+        line-height: 11px;
+        text-align: left;
+        color: #cacaca;
+    }
+    
+    form p.hide-dialog {
+        margin: 0 0 10px 0;
+        text-align: right;
+        font-size: 12px;
+        opacity: 0;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    
+    form:hover p.hide-dialog {
+        opacity: 1;
+    }
+    
+        form p.hide-dialog a {
+            color: #cacaca;
+            text-decoration: none;
+        }
+    
+        form p.hide-dialog a:hover {
+            color: #333333;
+        }

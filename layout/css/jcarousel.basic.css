@@ -1,0 +1,146 @@
+.jcarousel-wrapper {
+    margin: -38px auto 20px auto;
+    width: 1120px;
+    position: relative;
+}
+
+.cars_list .jcarousel-wrapper {
+    margin-top: 0;
+    width: 1070px;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 1120px;
+    height: 278px;
+}
+
+.cars_list .jcarousel {
+    height: 204px;
+    width: 1070px;
+}
+
+.jcarousel ul {
+    margin: 0 0 0 -15px;
+    padding: 5px;
+    list-style: none;
+    width: 20000em;
+    position: relative;
+}
+
+.cars_list .jcarousel ul {
+    margin: 0 0 0 0;
+}
+
+.jcarousel li {
+    margin: 0 20px;
+    border: 10px #ffffff solid;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    float: left;
+}
+
+.cars_list .jcarousel li {
+    margin: 0;
+    padding: 0 5px;
+    border: 0;
+    box-shadow: none;
+    float: none;
+    display: inline-block;
+}
+
+.jcarousel li img {
+    display: block;
+}
+
+/** Carousel Controls **/
+
+a.jcarousel-control-prev,
+a.jcarousel-control-next {
+    position: absolute;
+    top: 114px;
+    width: 26px;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    background: #ceced0;
+    color: #2a2a2c;
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+}
+
+.cars_list a.jcarousel-control-prev,
+.cars_list a.jcarousel-control-next {
+    top: 45px;
+}
+
+.jcarousel-control-prev {
+    left: -4px;
+}
+
+.cars_list .jcarousel-control-prev {left: -29px;}
+
+.jcarousel-control-next {
+    right: -6px;
+}
+
+.cars_list .jcarousel-control-next {right: -31px;}
+
+.jcarousel-control-prev:hover,
+.jcarousel-control-next:hover {
+    background: #a4a3a8;
+}
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+    display: block;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    margin: 15px 0 0 0;
+    width: 100%;
+    text-align: center;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    
+    font-size: 11px;
+    line-height: 17px;
+    min-width: 17px;
+    
+    background: #f4f4f7;
+    color: #f4f4f7;
+    border-radius: 9px;
+    border: 1px #cccccc solid;
+    padding: 0px;
+    text-align: center;
+    
+    margin: 0 6px;
+}
+
+.jcarousel-pagination a:hover {    
+    background: #cccccc;
+    color: #cccccc;
+}
+
+.jcarousel-pagination a.active {
+    border: 1px #d11e2a solid;
+    background: #d11e2a;
+    color: #d11e2a;
+}

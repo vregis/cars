@@ -1,0 +1,75 @@
+/**
+ * CSS styles for CLinkPager.
+ *
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @link http://www.yiiframework.com/
+ * @copyright 2008-2010 Yii Software LLC
+ * @license http://www.yiiframework.com/license/
+ * @since 1.0
+ */
+
+ul.pagination
+{
+	margin: 70px auto 30px auto;
+	padding: 0 0 20px 0;
+	font-size:14px;
+	line-height:100%;
+    text-align: center;
+	display:block;
+}
+
+ul.pagination li
+{
+    margin: 0 10px;
+	display:inline-block;
+    vertical-align: top;
+}
+
+ul.pagination li a:link,
+ul.pagination li a:visited
+{
+    padding: 0 10px;
+	border: 1px #dadada solid;
+    border-radius: 2px;
+    background-color: #ffffff !important;
+	color:#848484;
+    height: 32px;
+    width: 32px;
+    line-height: 28px;
+	text-decoration:none;
+}
+
+ul.pagination li.page a
+{
+	font-weight:normal;
+}
+
+ul.pagination li a:hover
+{
+    background-color: #ffffff;
+    border-color: #848484;
+    color: #333333;
+}
+
+ul.pagination li.active a:link,
+ul.pagination li.active a:visited
+{
+    border-color: #1bad58;
+    background-color: #1bad58 !important;
+    color: #ffffff;
+}
+
+ul.pagination li.disabled a
+{
+    border-color: #fafafa;
+	color:#cacaca;
+}
+
+/**
+ * Hide first and last buttons by default.
+ */
+ul.pagination li.first,
+ul.pagination li.last
+{
+	display:none;
+}

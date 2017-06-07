@@ -1,0 +1,420 @@
+AWSTATS DATA FILE 7.4 (build 20140726)
+# If you remove this file, all statistics for date 201612 will be lost/reset.
+# Last config file used to build this data file was /home/getupway/tmp/awstats/awstats.getupway.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2009                
+POS_TIME 2695                
+POS_VISITOR 8685                
+POS_DAY 10156               
+POS_DOMAIN 3496                
+POS_LOGIN 3880                
+POS_ROBOT 4035                
+POS_WORMS 4541                
+POS_EMAILSENDER 4672                
+POS_EMAILRECEIVER 4815                
+POS_SESSION 10377               
+POS_SIDER 10573               
+POS_FILETYPES 4950                
+POS_DOWNLOADS 5213                
+POS_OS 5478                
+POS_BROWSER 5649                
+POS_SCREENSIZE 6035                
+POS_UNKNOWNREFERER 6109                
+POS_UNKNOWNREFERERBROWSER 6401                
+POS_ORIGIN 6516                
+POS_SEREFERRALS 6654                
+POS_PAGEREFS 6807                
+POS_SEARCHWORDS 7013                
+POS_KEYWORDS 7165                
+POS_MISC 2358                
+POS_ERRORS 7224                
+POS_CLUSTER 3736                
+POS_SIDER_404 7355                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20161206130959 2061 465830 9544339146207
+FirstTime 20161201051542
+LastTime 20161206100348
+LastUpdate 20161206131308 2061 0 2061 0 0
+TotalVisits 33                  
+TotalUnique 28                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 37                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+TotalMisc 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+JavaEnabled 0 0 0
+AddToFavourites 0 26 0
+RealPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+FlashSupport 0 0 0
+QuickTimeSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 43 45 445347
+1 0 0 0 12 30 3771190
+2 0 0 0 14 14 156349
+3 0 0 0 12 29 642752
+4 1 1 4251 21 23 180880
+5 10 60 1457865 29 55 18712238
+6 3 3 27378 15 17 141763
+7 17 196 381268994 29 40 502239
+8 8 13 450443017 24 65 1352910
+9 3 5 417356797 6 15 2146648
+10 28 235 793282291 23 32 409139
+11 44 236 5742245 13 15 191095
+12 29 210 72834845 27 50 4238814
+13 21 97 16492661 29 32 370249
+14 4 72 320367943 27 33 254997
+15 0 1 1926156 18 18 370111
+16 4 98 1613257 29 43 2565140
+17 3 71 251678486 21 26 356542
+18 2 2 8501 13 67 1575824
+19 4 55 3357555 139 147 499268
+20 1231 1347 1408792195 11 11 152329
+21 2 3 1926274 8 9 99756
+22 0 0 0 11 13 171423
+23 0 1 1926156 14 15 222499
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 10
+lu 1233 1328 660320366
+il 97 506 299816172
+ru 41 420 977791381
+ua 17 226 305357520
+us 13 112 2935039
+nl 9 59 1453615
+it 2 52 1422897
+ro 1 1 4249
+fr 1 1 4251
+kz 0 1 1926156
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 9
+googlebot 198 2850684 20161206123659 12
+bot[\s_+:,\.\;\/\\-] 64 24797960 20161206124007 19
+google[_+\s]web[_+\s]preview 52 1441245 20161205181637 0
+robot 16 440478 20161204120222 0
+[\s_+:,\.\;\/\\-]bot 14 4035856 20161206044324 0
+spider 11 155430 20161206130959 0
+unknown 2 438 20161202160418 2
+no_user_agent 1 219 20161204120214 1
+googlebot\-image 1 28959 20161201161640 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 10
+html 38 225290 0 0
+Unknown 1358 765196 0 0
+png 221 319109 0 0
+woff2 15 990192 0 0
+mp4 9 2094476745 0 0
+css 319 8357005 0 0
+woff 3 267228 0 0
+gif 4 13026 0 0
+js 485 17107520 0 0
+jpg 254 97378447 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 4
+/resources/articles/home-video-1.mp4 2 15 624044130
+/resources/articles/home-video-2.mp4 2 20 737645055
+/resources/articles/home-video-3.mp4 2 19 763919448
+/resources/documents/20160629175655_ed3c0c1d.ppt 1 0 3465728
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 8
+winxp 1 1
+linuxandroid 51 2
+Unknown 102 5
+win7 445 68
+win8.1 2 1
+macosx 52 2
+winnt 1942 1308
+linux 165 27
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 16
+chrome27.0.1453 103 4
+opera41.0.2353.69 1 0
+mozilla 3 0
+chrome54.0.2840.99 914 134
+chrome46.0.2486.0 53 3
+chrome49.0.2623.75 7 7
+chrome56.0.2906.0 106 18
+chrome40.0.2214.115 1 1
+chrome53.0.2785.143 5 0
+chrome55.0.2883.75 1 0
+chrome52.0.2743.116 2 2
+Unknown 1 1
+firefox50.0 1560 1242
+firefox28.0 1 1
+chrome44.0.2403.157 1 0
+msie6.0 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 3
+Mozilla/5.0_(Android_4.4.2;_Tablet;_rv:50.0)_Gecko/50.0_Firefox/50.0 20161205161954
+Python-urllib/2.7 20161201104933
+Mozilla/5.0_(compatible;_Googlebot/2.1;__http://www.google.com/bot.html) 20161205102301
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+Python-urllib/2.7 20161201104933
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 43 52
+From1 0 0
+From2 2 2
+From3 5 5
+From4 1364 2701
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+bing 2 2
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 2
+https://www.facebook.com 4 4
+https://www.facebook.com 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+206 10 431226
+404 225 4426160
+302 221 2760
+500 3 60399
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 43
+/de/s/~o16 1 -
+/en 3 -
+/this_page_is_not_exist_i_am_sure/ 1 -
+/themes/frontend/img/sitemap-bg.jpg 1 http://getupway.com/sitemap
+/wp-login.php 2 -
+/mobile/hello 1 -
+/admin.php 1 -
+/en/how-it-works.html 1 -
+/es/s/~o19 1 -
+/s/~o15 1 -
+/administrator/ 1 -
+/login_form 1 -
+/login.php 1 -
+/cms/kernel/admin.php 1 -
+/textpattern/ 1 -
+/system/cms/ 1 -
+/sitetree/ 1 -
+/user/user/login/language/ru 1 -
+/netcat/ 1 -
+/admin/login/ 1 -
+/modx/manager/ 1 -
+/cgi-bin/mt/mt-check.cgi 1 -
+/manager/ 1 -
+/user/user/login/language/de 1 -
+/user/user/registration 2 -
+/wp-admin/ 1 -
+/bitrix/admin/ 1 -
+/home/getupway/public_html/protected/modules/user/%20controllers/ProfileController.php(160) 2 -
+/en/s/~o26 1 -
+/de/s/~o20 2 -
+/s/~o16 1 -
+/user/user/login/language/es 3 -
+/language/de 1 -
+/s/~o16/ 167 http://freetangodownload.com/tango-for-pc/
+/member/login/ 1 -
+/administrator/index.php 1 -
+/user/user/login 4 -
+/engine/print.php 1 -
+/typo3/index.php 1 -
+/user/user/registration/language/es 3 -
+/s/~o18 2 -
+/en/s/~o16 1 -
+/language/es 3 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 37
+94.242.252.46 1231 1342 660320248 20161205204220
+80.246.133.169 51 205 131014579 20161203120036
+141.226.161.219 39 177 38734236 20161201134602
+31.162.223.62 18 106 542469969 20161203092752
+92.60.191.75 14 159 293583671 20161206100348
+2.94.71.84 13 85 128658981 20161205104021
+188.166.109.45 8 58 1449364 20161205052353
+80.246.133.23 4 75 128621861 20161205200947
+95.153.222.247 4 98 1613257 20161205161954
+66.249.93.27 3 3 12752 20161206063458
+82.208.100.51 3 75 162954352 20161205143554
+109.66.213.40 3 53 1445496 20161202125135
+82.208.101.174 3 74 128611730 20161205100207
+94.158.155.237 2 74 9843442 20161202130257
+66.249.93.25 2 2 8501 20161203142220
+66.249.88.63 2 28 1094021 20161205115802
+94.242.252.54 2 2 118 20161205211054
+79.44.126.211 2 52 1422897 20161205111153
+66.249.88.61 1 38 1122238 20161205115800
+93.115.95.201 1 1 4249 20161205112600
+66.249.93.26 1 1 4251 20161201051542
+149.202.127.215 1 1 4251 20161203065219
+37.139.8.104 1 1 4251 20161202041736
+23.22.101.38 1 1 4251 20161201104933
+45.32.129.200 1 1 18876 20161205064802
+95.32.3.10 0 1 1926156 
+176.36.202.100 0 1 1926156 
+46.147.38.79 0 1 1926156 
+83.217.203.194 0 1 1926156 
+128.0.84.59 0 1 1926156 
+95.108.225.229 0 1 1926156 
+66.102.9.30 1 1 4250 20161202184836
+66.249.88.62 1 37 665899 20161205115803
+188.163.73.38 1 1 4251 20161201180315
+37.140.189.219 0 1 1926156 
+31.180.99.5 0 1 1926156 
+37.150.166.218 0 1 1926156 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 6
+20161201 42 177 71805033 4
+20161202 8 130 17530535 5
+20161203 72 301 1214118865 6
+20161204 0 3 5778468 0
+20161205 1280 2014 2496917376 16
+20161206 12 81 324356590 2
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+15mn-30mn 2
+0s-30s 23
+30s-2mn 1
+5mn-15mn 2
+30mn-1h 2
+1h+ 3
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 43
+/user/privateMessages/ajaxList 599 47321 1 0
+/user/privateMessages/getNewMessages 599 23361 0 2
+/hello 42 194112 24 17
+/ 37 221613 5 5
+/s 33 125886 0 2
+/my/orders 21 91696 0 0
+/themes/frontend/fonts/fontawesome-webfont.woff2 15 990192 0 3
+/site/gMapsAutocomplete 8 2664 0 0
+/admin 5 14865 1 0
+/user/profile/firstPass/p/b929e0304ec12a0589b1e271c0e3a968 4 17588 0 0
+/orders/default/archived 3 14124 0 0
+/s/~o43 3 18270 0 0
+/u/46 3 16041 0 0
+/im 3 11847 0 0
+/themes/frontend/fonts/fontawesome-webfont.woff 3 267228 2 1
+/user/profile/stagePublic/language/ru 2 9324 0 1
+/admin/categories 2 19022 0 0
+/my/offers 2 10797 0 0
+/user/profile/firstPass/p/b929e0304ec12a0589b1e271c0e3a968/language/ru 2 8800 0 0
+/user/profile/stagePublic 2 9327 0 0
+/admin/user 2 9808 0 0
+/offers/default/add 2 14176 0 0
+/u/60 2 10220 0 0
+/admin/categories/create 1 5218 0 0
+/staticPages/default/admin 1 5205 0 0
+/orders/offered/index 1 4487 0 0
+/my/stage-1 1 9035 0 0
+/user/admin/update/id/46 1 6575 0 1
+/orders/payments/income 1 4527 0 0
+/user/admin/admin 1 4922 0 0
+/u/64 1 4519 0 0
+/im~72 1 3819 0 0
+/subscription 1 4544 0 0
+/sitemap 1 3788 0 0
+/user/profile/firstPass/p/5d47236bccd0cf01cd028e0861dfa39f 1 4419 0 0
+/s/~o33 1 6284 0 0
+/user/privateMessages/dialogWindow/id/72 1 1192 0 0
+/offers/offerReviews/index 1 4460 0 0
+/user/admin/create 1 6271 0 0
+/site/unsubscribe 1 4200 0 0
+/about.html 1 3677 0 0
+/stories 1 6047 0 0
+/ru 1 6435 0 1
+END_SIDER

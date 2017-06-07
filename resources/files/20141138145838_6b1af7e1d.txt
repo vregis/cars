@@ -1,0 +1,2 @@
+phpMyAdmin увеличиваем время жизни сессии (авторизации):
+http://blog.dimmduh.com/2011/08/phpmyadmin.html

@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /protected/
+Disallow: /assets/
+Disallow: /app/
+Disallow: /downloader/
+Disallow: /js/
+Disallow: /media/
+Disallow: /prices/
+Disallow: /skin/
+Disallow: /var/
+Disallow: /wordpress_backup/

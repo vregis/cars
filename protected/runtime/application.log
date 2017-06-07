@@ -1,0 +1,94 @@
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "log" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "request" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "urlManager" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "coreMessages" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:02 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/articles/home-bundles.jpg". in /var/www/cars.local/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cars.local/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/artic...')
+#1 /var/www/cars.local/protected/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/cars.local/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/articles/home-bundles.jpg
+HTTP_REFERER=http://cars.local/
+---
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "errorHandler" application component
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "themeManager" application component
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "log" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "request" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "urlManager" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "coreMessages" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:02 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/vars/p1.jpg". in /var/www/cars.local/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cars.local/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/vars/...')
+#1 /var/www/cars.local/protected/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/cars.local/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/vars/p1.jpg
+HTTP_REFERER=http://cars.local/
+---
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "errorHandler" application component
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "themeManager" application component
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "log" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "request" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "urlManager" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "coreMessages" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:02 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/vars/icons1.png". in /var/www/cars.local/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cars.local/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/vars/...')
+#1 /var/www/cars.local/protected/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/cars.local/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/vars/icons1.png
+HTTP_REFERER=http://cars.local/themes/frontend/css/style.css
+---
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "errorHandler" application component
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "themeManager" application component
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "log" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "request" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "urlManager" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "coreMessages" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:02 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/articles/11680844.mp4". in /var/www/cars.local/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cars.local/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/artic...')
+#1 /var/www/cars.local/protected/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/cars.local/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/articles/11680844.mp4
+HTTP_REFERER=http://cars.local/
+---
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "errorHandler" application component
+2017/06/07 20:38:02 [trace] [system.CModule] Loading "themeManager" application component
+2017/06/07 20:38:09 [trace] [system.CModule] Loading "log" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:09 [trace] [system.CModule] Loading "request" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:09 [trace] [system.CModule] Loading "urlManager" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:09 [trace] [system.CModule] Loading "coreMessages" application component
+in /var/www/cars.local/index.php (13)
+2017/06/07 20:38:09 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/frontend/js/plugins/toastr/toastr.js.map". in /var/www/cars.local/protected/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/cars.local/protected/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/frontend...')
+#1 /var/www/cars.local/protected/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/cars.local/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/frontend/js/plugins/toastr/toastr.js.map
+---
+2017/06/07 20:38:09 [trace] [system.CModule] Loading "errorHandler" application component
+2017/06/07 20:38:09 [trace] [system.CModule] Loading "themeManager" application component
