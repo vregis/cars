@@ -13,35 +13,41 @@
 
 <div class="container">
     <p class="lead text-center"><br />Быстрая навигация по основным разделам сайта</p>
-    <br /><br /><br />
     
     <div class="row">
-        <div class="col-xs-12 col-sm-3">
-            <h5>111</h5>
-            <br />
-            <p><?php echo CHtml::link('Все модели', array('/cars/index'));?></p>
-            <?php 
-            if (!empty($cars))
-                foreach ($cars as $car) {
-                    echo '<p>'.CHtml::link($car->title, array('/cars/view', 'url_name' => $car->url_name)).'</p>';
-                }
-            ?>            
-        </div>
-        <div class="col-xs-12 col-sm-3">
-            <h5>222</h5>
-            <br />
-            <p><?php echo CHtml::link('Подписка на новости', array('/site/subscription'));?></p>
-        </div>
-        <div class="col-xs-12 col-sm-3">
-            <h5>333</h5>
-            <br />
-            <p><?php echo CHtml::link('Гарантия', array('/staticPages/default/view', 'url_name' => 'warranty'));?></p>
-        </div>
-        <div class="col-xs-12 col-sm-3">
-            <h5>Контактная<br />информация</h5>
-            <br />
-            <p><?php echo CHtml::link('О компании', array('/staticPages/default/view', 'url_name' => 'about'));?></p>
-            <p><?php echo CHtml::link('Обратная связь', array('/site/feedback'));?></p><br />
+        <div class="col-sm-12">
+            <ul>
+                <li>Статические страницы
+                    <ul>
+                        <?php foreach($staticPages as $sp):?>
+                            <li><a href = '/<?php echo $sp->url_name?>.html'><?php echo $sp->menu_name?></a></li>
+                        <?php endforeach;?>
+                    </ul>
+                </li>
+                <li>Статьи
+                    <ul>
+                        <?php foreach($articles as $article):?>
+                            <li><a href = '/stories/<?php echo $article->url_name?>'><?php echo $article->title?></a></li>
+                        <?php endforeach;?>
+                    </ul>
+                </li>
+                <li>Категории
+                    <ul>
+                        <?php foreach($categories as $category):?>
+                            <?php $offers = (new Offers())->getOffersFromCategoryId($category->id);?>
+                            <?php if($offers):?>
+                                <li><?php echo $category->name?>
+                                    <ul>
+                                        <?php foreach($offers as $offer):?>
+                                            <li><a href="/s/~o<?php echo $offer->id?>"><?php echo $offer->title?></a></li>
+                                        <?php endforeach;?>
+                                    </ul>
+                                </li>
+                            <?php endif;?>
+                        <?php endforeach;?>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

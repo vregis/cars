@@ -37,17 +37,20 @@
                 <p>These tips will help you improve your profile and achieve more orders.</p>
                 
                 <?php
-                if (!empty($progress['Improvements']))
+                if (!empty($progress['Improvements'])) {
                     foreach ($progress['Improvements'] as $chapter => $tips) {
                         //<sup class="text-muted">('.$progress[$chapter].'%)</sup>
-                        echo '<h5>'.$chapter.' </h5>';
+                        echo '<h5>' . $chapter . ' </h5>';
                         echo '<ul>';
                         foreach ($tips as $tip) {
                             // <span class="text-success">[ + '.$tip[0].'%]</span> &mdash; 
-                            echo '<li>'.$tip[1].'</li>';
+                            echo '<li>' . $tip[1] . '</li>';
                         }
                         echo '</ul>';
                     }
+                } else {
+                  echo 'Congratulations! You profile filled with 100%';
+                }
                 ?>
             </div>
         </div>

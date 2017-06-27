@@ -167,7 +167,7 @@ class ProfileController extends Controller
             } else $profile->validate();
         }   
             
-        if (!is_array($profile->languages))
+        if (!is_array($profile->languages) && isset($profile->languages) && !empty($profile->languages))
             $profile->languages = explode(',',$profile->languages);         
         
 

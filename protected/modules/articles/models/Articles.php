@@ -288,4 +288,9 @@ class Articles extends CActiveRecord
         
         return true;
     }
+
+    public function getAllArticles()
+    {
+        return $this->findAll();
+    }
 }

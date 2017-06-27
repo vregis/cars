@@ -2817,3 +2817,30 @@ table.archived-offers {
         font-size: 64px;
         line-height: 44px;
     }
+
+    .margin-label {
+        margin-right:20px;
+    }
+
+    .width100 {
+        width:100%!important;
+    }
+
+    .no-margin{
+        margin:0;
+    }
+
+    .no-paddings {
+        padding:0;
+    }
+
+    .small-slider {
+        width: 45px !important;
+        padding-left: 5px!important;
+        padding-right: 5px!important;
+        text-align: center;
+    }
+
+    .search-rating i {
+        font-size: 30px !important;
+    }

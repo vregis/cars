@@ -84,10 +84,10 @@ class Offers extends CActiveRecord
 			array('price_daily, price_hourly, rating', 'numerical'),
 			array('title', 'length', 'max'=>500),
 			array('video_link', 'length', 'max'=>255),
-            array('paypal_id', 'email'),
+            /*array('paypal_id', 'email'),*/
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, category_id, title, description, rental_information, video_link, year, price_daily, price_hourly, owner_id, date_created, status, type, rating, views, is_approved, time_to_prepare, is_promo', 'safe'),
+			array('id, phone, category_id, title, description, rental_information, video_link, year, price_daily, price_hourly, owner_id, date_created, status, type, rating, views, is_approved, time_to_prepare, is_promo', 'safe'),
 		);
 	}
 
@@ -148,6 +148,7 @@ class Offers extends CActiveRecord
             'age_from' => Yii::t('app', 'Возраст от'),
             'age_to' => Yii::t('app', 'до'),
             'paypal_id' => Yii::t('app', 'PayPal ID'),
+            'phone' => Yii::t('app', 'Номер телефона'),
 		);
 	}
 
@@ -179,7 +180,8 @@ class Offers extends CActiveRecord
 		$criteria->compare('views',$this->views);
 		$criteria->compare('is_approved',$this->is_approved);
         $criteria->compare('paypal_id',$this->paypal_id);
-                
+        $criteria->compare('phone',$this->phone);
+
         $count=$this->count($criteria);
         $pages=new CPagination($count);
 
@@ -568,4 +570,19 @@ class Offers extends CActiveRecord
         
         return $blocks;
     }
+
+    /**
+     * @param $categoryId
+     * @return array|mixed|null|static[]
+     */
+    public function getOffersFromCategoryId($categoryId)
+    {
+        return $this->findAll('category_id = :categoryId', [':categoryId' => $categoryId]);
+    }
+
+    public function getRandomOffersForMainPage()
+    {
+
+    }
+
 }

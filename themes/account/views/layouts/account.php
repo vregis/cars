@@ -3,7 +3,7 @@
     <?php
     
     $menu = array(
-        'My Orders' => array(
+       /* 'My Orders' => array(
             array(
                 'label' => '<i class="fa fa-calendar-check-o fa-fw"></i> '.Yii::t('app', 'Ordered Offers'),
                 'url' => array('/orders/default/index', 't' => Orders::STATUS_APPROVED),
@@ -38,7 +38,7 @@
                     Yii::app()->controller->id == 'offerReviews' && Yii::app()->controller->action->id == 'archived'
                 ),
             ),
-        ),
+        ),*/
         // 'My Payments' => array(
         //     array(
         //         'label' => '<i class="fa fa-credit-card fa-fw"></i> '.Yii::t('app', 'Income Payments'),

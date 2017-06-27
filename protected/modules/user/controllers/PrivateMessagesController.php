@@ -134,6 +134,8 @@ class PrivateMessagesController extends Controller
 	public function actionAdd($id)
 	{        
         $model = new PrivateMessages;
+        $mail = User::model()->findByPk($id);
+        UserModule::sendMail($mail->username, 'Notification', 'You have a new message on getupway.com');
         $model->recepient_id = $id;
         $model->sender_id = Yii::app()->user->id;
         $model->text = $_POST['text'];

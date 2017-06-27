@@ -440,4 +440,10 @@ class StaticPages extends CActiveRecord
 
         return $full_array;
     }
+
+    public function getAllStaticPages()
+    {
+        $staticPages = $this->findAll();
+        return $staticPages;
+    }
 }

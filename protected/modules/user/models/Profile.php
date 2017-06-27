@@ -107,7 +107,8 @@ class Profile extends UActiveRecord
 		//($rules,array(implode(',',$numerical), 'numerical', 'integerOnly'=>true));
 		array_push($rules,array('user_id, firstname, lastname, notes, userUsername, userEmail, userSuperuser, country_id, city, alter_phone, gender, birthday, is_company, languages', 'safe'));
 		array_push($rules,array('photo,photo2,photo3', 'unsafe'));
-        
+		array_push($rules,array('firstname', 'required'));
+
 		return $rules;
 	}
 

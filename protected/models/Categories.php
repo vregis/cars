@@ -471,4 +471,10 @@ class Categories extends CActiveRecord
         
         return $parameters;
     }
+
+    public function getAllCategory()
+    {
+        $categories = $this->findAll();
+        return $categories;
+    }
 }

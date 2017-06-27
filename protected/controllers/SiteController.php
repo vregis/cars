@@ -77,8 +77,8 @@ class SiteController extends Controller
 	}
 
 
-        
-        
+
+
 	public function actionGMapsAutocomplete()
 	{        
         $text = urlencode(trim($_POST['text']));
@@ -133,7 +133,7 @@ class SiteController extends Controller
         
         
 	public function actionIndex()
-	{        
+	{
         Yii::app()->theme = 'frontend';
         $this->layout = 'one_column';    
         
@@ -215,9 +215,16 @@ class SiteController extends Controller
 	public function actionSitemap()
 	{        
         Yii::app()->theme = 'frontend';
-        $this->layout = 'one_column'; 
+        $this->layout = 'one_column';
+
+        $staticPages = (new StaticPages())->getAllStaticPages();
+        $articles = (new Articles())->getAllArticles();
+        $categories = (new Categories())->getAllCategory();
         
         $this->render('sitemap', array(
+            'articles' => $articles,
+            'staticPages' => $staticPages,
+            'categories'  => $categories
         ));
 	}
 
@@ -225,7 +232,7 @@ class SiteController extends Controller
         
         
 	public function actionSearch()
-	{        
+	{
         Yii::app()->theme = 'frontend';
         $this->layout = 'one_column';
         

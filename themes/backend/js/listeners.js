@@ -4,7 +4,7 @@ $(document).ready(function() {
             checkboxClass: 'icheckbox_square-green',
             radioClass: 'iradio_square-green',
         });
-    
+
     
     if ($('.draggable_block').length) {
         var element = ".sortable-view";

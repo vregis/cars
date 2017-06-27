@@ -49,22 +49,33 @@
                     <?php } ?>
 
                     <div class="row">
-                        <div class="col-xs-12 col-md-6">
+                        <div class="col-xs-12">
                             <div class="form-group">
+                                <?php
+                                echo $form->checkBox($profile,'is_company');
+                                echo $form->labelEx($profile,'is_company');
+                                ?> <!-- <sup class="text-success">(+ 15%)</sup> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <div class="form-group last_name_div">
                                 <?php echo $form->labelEx($profile,'lastname',array('class' => 'control-label')); ?> <!-- <sup class="text-success">(+ 15%)</sup> -->
                                 <?php echo $form->textField($profile,'lastname',array('class'=>'form-control')); ?>
                             </div>
                         </div>
 
                         <div class="col-xs-12 col-md-6">
-                            <div class="form-group">
+                            <div class="form-group first_name_div">
                                 <?php echo $form->labelEx($profile,'firstname',array('class' => 'control-label')); ?> <!-- <sup class="text-success">(+ 15%)</sup> -->
                                 <?php echo $form->textField($profile,'firstname',array('class'=>'form-control')); ?>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row not_for_company">
                         <div class="col-xs-12 col-md-6">
                             <div class="form-group">
                                 <?php echo $form->labelEx($profile,'birthday',array('class' => 'control-label')); ?><!--  <sup class="text-success">(+ 15%)</sup> -->
@@ -130,16 +141,7 @@
                     </div>
 
                     <br />
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="form-group">
-                                <?php
-                                    echo $form->checkBox($profile,'is_company');
-                                    echo $form->labelEx($profile,'is_company');
-                                ?> <!-- <sup class="text-success">(+ 15%)</sup> -->
-                            </div>
-                        </div>
-                    </div>   
+
                     <h4><?= Yii::t('app', 'Синхронизируйте:') ?></h4>
                     <?php  
                     $this->widget('application.extensions.ulogin.components.UloginWidget', array(
@@ -177,3 +179,33 @@
 
        <?php $this->endWidget(); ?>
     </div>
+
+<script>
+    $(function(){
+        $('input').on('ifChecked', function(event){
+            isCompany()
+        });
+        $('input').on('ifUnchecked', function(event){
+            isUser()
+        });
+
+        if($('#Profile_is_company').prop('checked')){
+            isCompany();
+        }else{
+            isUser();
+        }
+
+    })
+
+    function isCompany(){
+        $('.last_name_div').find('label').html('Название компании <span class="required">*</span>');
+        $('.first_name_div').find('label').html('Company ID <span class="required">*</span>');
+        $('.not_for_company').hide();
+    }
+    
+    function isUser() {
+        $('.last_name_div').find('label').html('Фамилия');
+        $('.first_name_div').find('label').html('Имя <span class="required">*</span>');
+        $('.not_for_company').show();
+    }
+</script>

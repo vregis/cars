@@ -66,7 +66,8 @@ class DefaultController extends Controller
             $model->price_daily = $model->offer->price_daily;
             $model->price_hourly = $model->offer->price_hourly;
             $model->paypal_id = $model->offer->paypal_id;
-                    
+            $model->phone = $model->offer->phone;
+
             $dates = explode(' ~ ', $model->dates_split);
             if (count($dates) == 2) {
                 $model->date_since = $dates[0];

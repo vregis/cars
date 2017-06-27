@@ -22,6 +22,7 @@ class RegistrationController extends Controller
 	 * Registration user
 	 */
 	public function actionRegistration() {
+
         Yii::app()->theme = 'frontend';
         $this->layout='//layouts/one_column';
         
@@ -52,8 +53,10 @@ class RegistrationController extends Controller
                 $profile->attributes=((isset($_POST['Profile'])?$_POST['Profile']:array()));
                 
                 $reCaptcha = new ReCaptcha;
+
                 
                 if ($model->validate() && $profile->validate() && $reCaptcha->checkResponse()) {
+
                     $soucePassword = $model->password;
                     $model->activkey=UserModule::encrypting(microtime().$model->password);
                     $model->password=UserModule::encrypting($model->password);
