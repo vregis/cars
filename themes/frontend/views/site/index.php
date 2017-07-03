@@ -302,8 +302,32 @@
                 </form>  
             </div>  
             <hr />
-        </div>  --> 
-        
+        </div>  -->
+
+        <div class="container">
+            <div class="row info-block row-centered">
+                <?php foreach($mergedOffers as $offer):?>
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">
+                        <div class="home-areas-cover">
+                            <div class="home-areas">
+                                <img src="/resources/offers/<?php echo $offer->filename?$offer->filename:'20170122164520_2c246278.jpg'?>">
+                                <div>
+                                    <h4><?php echo $offer->title?></h4>
+                                </div>
+                            </div>
+                            <?php
+
+                                echo '<p>'.mb_substr(strip_tags($offer->descr), 0, 128, 'UTF-8').'...</p>';
+                                echo '<p class="text-right">'.CHtml::link(Yii::t('app', 'Read more...'), array('/articles/default/view', 'url_name' => 'hgjgfjh')).'</p>';
+
+                            ?>
+                            <p><?= CHtml::link('Set location & Search', array('/articles/default/featured', 'id' => 'ground'), array('class' => 'btn btn-success btn-block')) ?></p>
+                        </div>
+                    </div>
+                <?php endforeach;?>
+            </div>
+        </div>
+
         <!-- Top Promo -->   
         <div class="container">
             <div class="row info-block row-centered">

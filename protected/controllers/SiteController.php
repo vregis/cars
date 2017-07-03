@@ -134,6 +134,13 @@ class SiteController extends Controller
         
 	public function actionIndex()
 	{
+        $earthOffers = (new Categories())->getElementOffers(1);
+        $waterOffers = (new Categories())->getElementOffers(2);
+        $airOffers = (new Categories())->getElementOffers(3);
+
+        $mergedOffers = array_merge($earthOffers, $waterOffers, $airOffers);
+        shuffle($mergedOffers);
+
         Yii::app()->theme = 'frontend';
         $this->layout = 'one_column';    
         
@@ -144,7 +151,8 @@ class SiteController extends Controller
         //roman
 
         $this->render('index', array(
-            'promoted' => $promoted
+            'promoted' => $promoted,
+            'mergedOffers' => $mergedOffers,
         ));
 
         //require_once('/home/vorontra/kretivz.pro/getupway/themes/frontend/views/categories/_singleDropdown.php');

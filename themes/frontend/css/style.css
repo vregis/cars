@@ -2844,3 +2844,35 @@ table.archived-offers {
     .search-rating i {
         font-size: 30px !important;
     }
+
+    .time-div {
+        border-radius:10px;
+        height:30px;
+        width:60px;
+        padding-top:5px;
+        margin-top:10px
+    }
+
+    .div-blue {
+        background-color:#00FFFF;
+    }
+
+    .div-red {
+        background-color: red;
+    }
+
+    .time-off-div {
+        border-radius:10px;
+        height:30px;
+        margin-top:10px;
+        padding-top:5px;
+        width:208px;
+    }
+
+    .green-dash {
+        margin-top: 8px;
+        height: 5px;
+        width: 40px;
+        background-color: green;
+        margin-left: 9px;
+    }

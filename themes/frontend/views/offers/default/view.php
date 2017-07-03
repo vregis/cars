@@ -116,8 +116,35 @@ if (!empty($model->addresses))
                                 ?>
 
                             </div>
-                            
+
                             <?php if (!empty($model->video_link)) echo CHtml::link('<i class="fa fa-youtube-play fa-fw"></i> '.Yii::t('app', 'Watch video'), $model->video_link, array('class' => 'btn btn-danger btn-block fancybox.iframe video-fancybox', 'rel' => 'group1')) ?>
+
+                            <?php if($days):?>
+                                <?php $i = 0; ?>
+                            <table style="width:100%">
+                                <?php foreach($days as $key => $value):?>
+                                <?php if(!$value[0]): ?>
+                                <?php continue ?>
+                                <?php endif;?>
+                                <?php $time = explode('-', $value[0]);?>
+                                <?php if(count($time) > 1):?>
+                                    <tr>
+                                        <td style="width:25%; text-align:center"><div class="time-div div-blue"><?php echo $key?></div></td>
+                                        <td style="width:25%; text-align:center"><div class="time-div div-blue"><?php echo $time[0]?></div></td>
+                                        <td style="width:25%; text-align:center"><div class="green-dash"></div></td>
+                                        <td style="width:25%; text-align:center"><div class="time-div div-blue"><?php echo $time[1]?></div></td>
+                                    </tr>
+                                <?php else: ?>
+                                    <tr>
+                                        <td style="width:25%; text-align:center"><div class="time-div div-blue"><?php echo $key?></div></td>
+                                        <td style="width:25%; text-align:center" colspan="3"><div class="time-off-div div-red">Day Off</div></td>
+                                    </tr>
+                                <?php endif;?>
+                                <?php endforeach;?>
+
+                            </table>
+                            <?php endif;?>
+
 
                             <?php
                             if (!empty($model->parameters) && count($model->parameters) < 10) {

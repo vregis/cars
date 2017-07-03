@@ -44,10 +44,10 @@ class DefaultController extends Controller
 			),
 		);
 	}
-    
-    
 
-    
+
+
+
 	public function actionOrder($id)
 	{
         $this->layout='//layouts/one_column';
@@ -356,9 +356,34 @@ class DefaultController extends Controller
                 $this->redirect(array('/offers/default/view', 'id' => $id, '#' => 'offer-tabs'));
         }
 
+        $days = [];
+        $days['Mon'] = [];
+        $days['Tue'] = [];
+        $days['Wed'] = [];
+        $days['Thu'] = [];
+        $days['Fri'] = [];
+        $days['Sat'] = [];
+        $days['Sun'] = [];
+
+        if(!$model->publicOptions) {
+            $days = null;
+        }else{
+            foreach ($model->publicOptions as $po){
+                array_push($days['Mon'], $po->mon);
+                array_push($days['Tue'], $po->tue);
+                array_push($days['Wed'], $po->wed);
+                array_push($days['Thu'], $po->thu);
+                array_push($days['Fri'], $po->fri);
+                array_push($days['Sat'], $po->sat);
+                array_push($days['Sun'], $po->sun);
+            }
+        }
+
+
         $this->render('view',array(
             'model'=>$model,
             'additions'=>$this->additionsByID($model->publicOptions[0]->id),
+            'days' => $days,
         ));
 	}
     
