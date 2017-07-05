@@ -310,18 +310,20 @@
                     <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">
                         <div class="home-areas-cover">
                             <div class="home-areas">
-                                <img src="/resources/offers/<?php echo $offer->filename?$offer->filename:'20170122164520_2c246278.jpg'?>">
-                                <div>
-                                    <h4><?php echo $offer->title?></h4>
-                                </div>
+                                <a href="/u/<?php echo $offer->owner_id?>"><img class="main-prof-img" src="/resources/users/<?php echo $offer->photo?>">
+                                </a>
+                                    <div class="main-prof-name"><?php echo $offer->ln?> <?php echo $offer->fn?></div>
+
+                                <img class="img-responsive" src="/resources/offers/<?php echo $offer->filename?$offer->filename:'20170122164520_2c246278.jpg'?>">
+
                             </div>
+                            <p style="font-weight: bold"><?php echo $offer->title?></p>
                             <?php
 
                                 echo '<p>'.mb_substr(strip_tags($offer->descr), 0, 128, 'UTF-8').'...</p>';
-                                echo '<p class="text-right">'.CHtml::link(Yii::t('app', 'Read more...'), array('/articles/default/view', 'url_name' => 'hgjgfjh')).'</p>';
+                                echo '<p class="text-right"><a href="/s/~o'.$offer->offer_id.'">Read more ...</a></p>';
 
                             ?>
-                            <p><?= CHtml::link('Set location & Search', array('/articles/default/featured', 'id' => 'ground'), array('class' => 'btn btn-success btn-block')) ?></p>
                         </div>
                     </div>
                 <?php endforeach;?>

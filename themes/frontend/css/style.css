@@ -2854,11 +2854,11 @@ table.archived-offers {
     }
 
     .div-blue {
-        background-color:#00FFFF;
+        background-color:#1db5f8;
     }
 
     .div-red {
-        background-color: red;
+        background-color: #d54f61;
     }
 
     .time-off-div {
@@ -2873,6 +2873,34 @@ table.archived-offers {
         margin-top: 8px;
         height: 5px;
         width: 40px;
-        background-color: green;
+        background-color: #179d60;
         margin-left: 9px;
+    }
+
+    .main-prof-img {
+        margin: 3px;
+        left: 3px;
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-radius: 59px;
+    }
+
+    .main-prof-name {
+        color: white!important;
+        top: 87px!important;
+        position: absolute!important;
+        left: 5px!important;
+        margin: 0!important;
+        text-align: left!important;
+        z-index:9999;
+        cursor:pointer;
+    }
+
+    .timepick {
+        width:52px;
+    }
+
+    .timepick2 {
+        width:52px;
     }

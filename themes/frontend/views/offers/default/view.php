@@ -27,7 +27,6 @@ if (!empty($model->addresses))
     foreach ($model->addresses as $address) {
         $pins[] = array('coords' => array($address->lat, $address->lng), 'label' => $address->fullAddress);
     }
-
 ?>
 
         <!-- Main content -->
@@ -328,7 +327,7 @@ if (!empty($model->addresses))
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-4 col-md-3">
-                                <a href="#" id="ao_button" owner_id="<?=$model->owner->id; ?>" <?= !empty($model->publicOptions[0]->use_paypal)? 'class="btn btn-success btn-solid btn-block btn-submit" data-target="additional-options-form">Order and Pay' : 'class="user-phone">Phone #'; ?>  <i class="fa fa-angle-right"></i></a><br />
+                                <a href="#" id="show_offer_phone" phone="<?=$model->phone; ?>" <?= !empty($model->publicOptions[0]->use_paypal)? 'class="btn btn-success btn-solid btn-block btn-submit" data-target="additional-options-form">Order and Pay' : 'class="user-phone">Phone #'; ?>  <i class="fa fa-angle-right"></i></a><br />
  
                             </div>
                         </div>

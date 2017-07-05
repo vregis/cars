@@ -25,6 +25,8 @@ class Categories extends CActiveRecord
     public $filename;
     public $title;
     public $descr;
+    public $offer_id;
+    public $owner_id;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -494,7 +496,7 @@ class Categories extends CActiveRecord
 
 
     public function getParentIds($id){
-        $ids = Categories::model()->findAllByAttributes(['parent_id' => 1]);
+        $ids = Categories::model()->findAllByAttributes(['parent_id' => $id]);
         $parentIds = [$id];
         $parentIds = $this->prepareObjectToArray($ids, $parentIds);
 
@@ -504,10 +506,10 @@ class Categories extends CActiveRecord
     public function getElementOffers($id){
         $parentIds = $this->getParentIds($id);
 
-        $query = 'SELECT *, p.firstname as fn, p.lastname as ln, p.photo as photo, op.filename as filename, o.title as title, o.description as descr FROM categories as c inner join offers as o on c.id = o.category_id 
+        $query = 'SELECT *, p.firstname as fn, p.lastname as ln, p.photo as photo, op.filename as filename, o.title as title, o.description as descr, o.id as offer_id, o.owner_id as owner_id FROM categories as c inner join offers as o on c.id = o.category_id 
                   inner join profiles as p on o.owner_id = p.user_id
                   inner join offer_photos as op on op.offer_id = o.id
-                  where c.parent_id in ('.implode(",",$parentIds).') order by RAND() limit 3';
+                  where c.parent_id in ('.implode(",",$parentIds).') and o.status = 1 order by RAND() limit 3';
         $offers = Categories::findAllBySql($query);
         return $offers;
     }

@@ -259,6 +259,18 @@ $(document).ready(function() {
     }
 
 
+    if ($('#show_offer_phone').length) {
+        $('#show_offer_phone').click(function() {
+
+            var phone = $(this).attr('phone');
+            if(phone != ''){
+                $(this).html(phone);
+            }
+
+        });
+    }
+
+
     /*
      * Get Additions
      */
