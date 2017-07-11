@@ -17,5 +17,5 @@
             'rating'=>$data->rating,
             'htmlOptions'=>array('class' => 'star-rating-small'),
         )); ?>
-        <p class="offer-price"><?= $this->formatPrice($data->price_hourly); ?> <small class="text-muted thin">/ <?= Yii::t('app', 'hour') ?></small></p>
+        <p class="offer-price"><?= $this->formatPrice($data->price_daily); ?> <small class="text-muted thin"></small></p>
     </div>

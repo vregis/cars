@@ -35,41 +35,244 @@
                 </div>-->
             <?php $this->endWidget(); ?>
 
-            <form class="form-inline">
+            <form class="form-inline" action="/s" method="GET">
                 <div class="row">
-                    <div class="form-group col-xs-6">
-                        <div class="col-xs-3">
-                            <label class="margin-label" for="exampleInputName2">Location</label>
-                        </div>
-                        <div class="col-xs-9">
-                        <input type="text" class="form-control width100" name="l" id="home-search-input" placeholder="<?= Yii::t('app', 'Paris, France') ?>" autocomplete="off" placeholder="Jane Doe">
-                        </div>
-                    </div>
                     <div class="form-group col-xs-6">
                         <div class="col-xs-3">
                             <label class="margin-label"  for="exampleInputEmail2">String</label>
                         </div>
                         <div class="col-xs-9">
-                            <input type="email" class="form-control width100" id="" placeholder="jane.doe@example.com">
+                            <input type="email" name="email" class="form-control width100" id="" placeholder="jane.doe@example.com">
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-6">
+                        <div class="col-xs-3">
+                            <label class="margin-label" for="exampleInputName2">Category</label>
+                        </div>
+                        <div class="col-xs-9">
+                            <input type="text" data-single="0" autocomplete="off" name="category" class="form-control width100 catdd-selector">
                         </div>
                     </div>
                 </div>
                 <div style="margin-top:20px;" class="row">
-                    <div style="text-align:right;" class="form-group col-xs-6">
-                        <div class="col-xs-3"></div>
-                        <div class="col-xs-9">
-                            <div class="checkbox" style="margin-right:-11px">
-                                <label>
-                                    <b>North</b> <input type="checkbox">
-                                </label>
-                                <label>
-                                    <b>Center</b> <input type="checkbox">
-                                </label>
-                                <label>
-                                    <b>South</b> <input type="checkbox">
-                                </label>
+
+                    <!-- Expperimental part Roman -->
+                    <div class="search-type-container animated">
+                        <div class="container">
+                            <div class="content-block">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#earth" aria-controls="earth" role="tab" data-toggle="tab">
+                                            <?= CHtml::image(Yii::app()->theme->baseUrl.'/img/home-ground-sq.jpg', Yii::t('app', 'Earth'), array('class' => 'img-circle')) ?>
+                                            <?= Yii::t('app', 'Earth'); ?>
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#water" aria-controls="water" role="tab" data-toggle="tab">
+                                            <?= CHtml::image(Yii::app()->theme->baseUrl.'/img/home-water-sq.jpg', Yii::t('app', 'Water'), array('class' => 'img-circle')) ?>
+                                            <?= Yii::t('app', 'Water'); ?>
+                                        </a></li>
+                                    <li role="presentation">
+                                        <a href="#air" aria-controls="air" role="tab" data-toggle="tab">
+                                            <?= CHtml::image(Yii::app()->theme->baseUrl.'/img/home-air-sq.jpg', Yii::t('app', 'Air'), array('class' => 'img-circle')) ?>
+                                            <?= Yii::t('app', 'Air'); ?>
+                                        </a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="earth">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-4">
+                                                <?php
+                                                $top_categories = Categories::getListDataWithoutChildren(1);
+
+                                                $this->widget('zii.widgets.CMenu',array(
+                                                    'encodeLabel'=>false,
+                                                    'firstItemCssClass'=>'first',
+                                                    'items'=>$top_categories,
+                                                    'htmlOptions'=>array('class' => 'topcategories'),
+                                                ));
+                                                ?>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <?php
+                                                $all_subcategories = array();
+                                                if (!empty($top_categories))
+                                                    foreach ($top_categories as $category) {
+                                                        $id = $category['linkOptions']['data-id'];
+                                                        $second_categories = Categories::getListDataWithoutChildren($id);
+
+                                                        $this->widget('zii.widgets.CMenu',array(
+                                                            'id'=>'subcats-'.$id,
+                                                            'encodeLabel'=>false,
+                                                            'firstItemCssClass'=>'first',
+                                                            'items'=>$second_categories,
+                                                            'htmlOptions'=>array('class' => 'subcategories'),
+                                                        ));
+
+                                                        $all_subcategories = array_merge($all_subcategories, $second_categories);
+                                                    }
+                                                ?>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <?php
+                                                if (!empty($all_subcategories))
+                                                    foreach ($all_subcategories as $category) {
+                                                        $id = $category['linkOptions']['data-id'];
+                                                        $second_categories = Categories::getListDataWithoutChildren($id);
+
+                                                        $this->widget('zii.widgets.CMenu',array(
+                                                            'id'=>'subcats-'.$id,
+                                                            'encodeLabel'=>false,
+                                                            'firstItemCssClass'=>'first',
+                                                            'items'=>$second_categories,
+                                                            'htmlOptions'=>array('class' => 'subcategories'),
+                                                        ));
+                                                    }
+                                                ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="water">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-4">
+                                                <?php
+                                                $top_categories = Categories::getListDataWithoutChildren(2);
+
+                                                $this->widget('zii.widgets.CMenu',array(
+                                                    'encodeLabel'=>false,
+                                                    'firstItemCssClass'=>'first',
+                                                    'items'=>$top_categories,
+                                                    'htmlOptions'=>array('class' => 'topcategories'),
+                                                ));
+                                                ?>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <?php
+                                                $all_subcategories = array();
+                                                if (!empty($top_categories))
+                                                    foreach ($top_categories as $category) {
+                                                        $id = $category['linkOptions']['data-id'];
+                                                        $second_categories = Categories::getListDataWithoutChildren($id);
+
+                                                        $this->widget('zii.widgets.CMenu',array(
+                                                            'id'=>'subcats-'.$id,
+                                                            'encodeLabel'=>false,
+                                                            'firstItemCssClass'=>'first',
+                                                            'items'=>$second_categories,
+                                                            'htmlOptions'=>array('class' => 'subcategories'),
+                                                        ));
+
+                                                        $all_subcategories = array_merge($all_subcategories, $second_categories);
+                                                    }
+                                                ?>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <?php
+                                                if (!empty($all_subcategories))
+                                                    foreach ($all_subcategories as $category) {
+                                                        $id = $category['linkOptions']['data-id'];
+                                                        $second_categories = Categories::getListDataWithoutChildren($id);
+
+                                                        $this->widget('zii.widgets.CMenu',array(
+                                                            'id'=>'subcats-'.$id,
+                                                            'encodeLabel'=>false,
+                                                            'firstItemCssClass'=>'first',
+                                                            'items'=>$second_categories,
+                                                            'htmlOptions'=>array('class' => 'subcategories'),
+                                                        ));
+                                                    }
+                                                ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="air">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-4">
+                                                <?php
+                                                $top_categories = Categories::getListDataWithoutChildren(3);
+
+                                                $this->widget('zii.widgets.CMenu',array(
+                                                    'encodeLabel'=>false,
+                                                    'firstItemCssClass'=>'first',
+                                                    'items'=>$top_categories,
+                                                    'htmlOptions'=>array('class' => 'topcategories'),
+                                                ));
+                                                ?>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <?php
+                                                $all_subcategories = array();
+                                                if (!empty($top_categories))
+                                                    foreach ($top_categories as $category) {
+                                                        $id = $category['linkOptions']['data-id'];
+                                                        $second_categories = Categories::getListDataWithoutChildren($id);
+
+                                                        $this->widget('zii.widgets.CMenu',array(
+                                                            'id'=>'subcats-'.$id,
+                                                            'encodeLabel'=>false,
+                                                            'firstItemCssClass'=>'first',
+                                                            'items'=>$second_categories,
+                                                            'htmlOptions'=>array('class' => 'subcategories'),
+                                                        ));
+
+                                                        $all_subcategories = array_merge($all_subcategories, $second_categories);
+                                                    }
+                                                ?>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <?php
+                                                if (!empty($all_subcategories))
+                                                    foreach ($all_subcategories as $category) {
+                                                        $id = $category['linkOptions']['data-id'];
+                                                        $second_categories = Categories::getListDataWithoutChildren($id);
+
+                                                        $this->widget('zii.widgets.CMenu',array(
+                                                            'id'=>'subcats-'.$id,
+                                                            'encodeLabel'=>false,
+                                                            'firstItemCssClass'=>'first',
+                                                            'items'=>$second_categories,
+                                                            'htmlOptions'=>array('class' => 'subcategories'),
+                                                        ));
+                                                    }
+                                                ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr />
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-9">
+                                        <ul id="selected-types">
+                                            <li><?= Yii::t('app', 'Selected types') ?>:</li>
+                                            <?php
+                                            if (!empty($_GET['t'])) {
+                                                $types = explode(',',$_GET['t']);
+
+                                                if (!empty($types)) {
+                                                    $criteria = new CDbCriteria();
+                                                    $criteria->addInCondition('id', $types);
+                                                    $selected_categories = Categories::model()->findAll($criteria);
+
+                                                    if (!empty($selected_categories))
+                                                        foreach ($selected_categories as $category) {
+                                                            echo '<li data-id="'.$category->id.'"><a href="#">'.$category->name.'<i class="fa fa-times"></i></a></li>';
+                                                        }
+                                                }
+                                            }
+                                            ?>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <a href="#" class="btn btn-success btn-block btn-accept-types"><?= Yii::t('app', 'Apply selection'); ?></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="categories-dropdown-litter"></div>
                     </div>
                     <div class="form-group col-xs-6">
                         <div class="col-sm-3">
@@ -126,29 +329,30 @@
                         </div>
                         </div>
                     </div>
-                </div>
-                <div class="row" style="margin-top: 20px">
-                    <div class="form-group col-xs-6">
-                        <div class="col-xs-3">
-                            <label class="margin-label" for="exampleInputName2">Category</label>
-                        </div>
-                        <div class="col-xs-9">
-                            <input type="text" class="form-control width100" name="l" id="home-search-input" placeholder="" autocomplete="off" placeholder="Jane Doe">
-                        </div>
-                    </div>
                     <div class="form-group col-xs-6">
                         <div class="col-xs-3">
                         </div>
                         <div class="col-xs-9">
-                                <p class="star-rating-small search-rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i></p>
-                            </div>
+                            <input name="s" type="hidden" class="rating-input" value="">
+                            <p class="star-rating-small search-rating">
+                                <i data-number="1" class="fa fa-star star-rat"></i>
+                                <i data-number="2" class="fa fa-star-o star-rat"></i>
+                                <i data-number="3" class="fa fa-star-o star-rat"></i>
+                                <i data-number="4" class="fa fa-star-o star-rat"></i>
+                                <i data-number="5" class="fa fa-star-o star-rat"></i></p>
+                        </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="form-group col-xs-6"></div>
+                    <div class="form-group col-xs-6">
+                        <input style="margin-left:16px" type="submit" value="Search offers" class="btn">
+                    </div>
+                </div>
+
+
+
             </form>
 
             <div class="info-block">
@@ -167,12 +371,25 @@
 </div>
 
 <script>
-    $(document).on('click', '.fa-star-o', function(){
-        $(this).removeClass('fa-star-o').addClass('fa-star');
+
+    $('input#age_to').attr('name', 'age_to');
+    $('input#age_from').attr('name', 'age_from');
+
+    $(document).on('click', '.star-rat', function(){
+        var num = $(this).attr('data-number');
+
+        $('.fa-star').each(function(){
+
+            $('.rating-input').val(num);
+            $(this).removeClass('fa-star').addClass('fa-star-o');
+            $('.star-rat').each(function(){
+                if($(this).attr('data-number') <= num ){
+                    $(this).removeClass('fa-star-o').addClass('fa-star')
+                }
+            })
+        })
     })
-    $(document).on('click', '.fa-star', function(){
-        $(this).removeClass('fa-star').addClass('fa-star-o');
-    })
+
 </script>
 
 

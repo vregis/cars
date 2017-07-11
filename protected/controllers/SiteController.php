@@ -134,12 +134,14 @@ class SiteController extends Controller
         
 	public function actionIndex()
 	{
-        $earthOffers = (new Categories())->getElementOffers(1);
+       /* $earthOffers = (new Categories())->getElementOffers(1);
         $waterOffers = (new Categories())->getElementOffers(2);
         $airOffers = (new Categories())->getElementOffers(3);
 
         $mergedOffers = array_merge($earthOffers, $waterOffers, $airOffers);
-        shuffle($mergedOffers);
+        shuffle($mergedOffers);*/
+
+       $mergedOffers = (new Categories())->getRandomOffers();
 
         Yii::app()->theme = 'frontend';
         $this->layout = 'one_column';    
@@ -166,7 +168,7 @@ class SiteController extends Controller
         
         
 	public function actionSiteSearch($s)
-	{        
+	{
         Yii::app()->theme = 'frontend';
         $this->layout = 'one_column';  
         

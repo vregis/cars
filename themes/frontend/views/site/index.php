@@ -306,7 +306,12 @@
 
         <div class="container">
             <div class="row info-block row-centered">
+                <?php $i = 0;?>
                 <?php foreach($mergedOffers as $offer):?>
+                    <?php $i++?>
+                    <?php if($i % 3 == 0):?>
+                        <div class="row">
+                    <?php endif;?>
                     <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">
                         <div class="home-areas-cover">
                             <div class="home-areas">
@@ -326,6 +331,9 @@
                             ?>
                         </div>
                     </div>
+                     <?php if($i % 3 == 0):?>
+                        </div>
+                     <?php endif;?>
                 <?php endforeach;?>
             </div>
         </div>

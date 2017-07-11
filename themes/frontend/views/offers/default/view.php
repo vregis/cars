@@ -117,7 +117,7 @@ if (!empty($model->addresses))
                             </div>
 
                             <?php if (!empty($model->video_link)) echo CHtml::link('<i class="fa fa-youtube-play fa-fw"></i> '.Yii::t('app', 'Watch video'), $model->video_link, array('class' => 'btn btn-danger btn-block fancybox.iframe video-fancybox', 'rel' => 'group1')) ?>
-
+                            <!--
                             <?php if($days):?>
                                 <?php $i = 0; ?>
                             <table style="width:100%">
@@ -143,7 +143,7 @@ if (!empty($model->addresses))
 
                             </table>
                             <?php endif;?>
-
+                            -->
 
                             <?php
                             if (!empty($model->parameters) && count($model->parameters) < 10) {

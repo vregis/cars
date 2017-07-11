@@ -514,5 +514,15 @@ class Categories extends CActiveRecord
         return $offers;
     }
 
+    public function getRandomOffers()
+    {
+        $query = 'SELECT *, p.firstname as fn, p.lastname as ln, p.photo as photo, op.filename as filename, o.title as title, o.description as descr, o.id as offer_id, o.owner_id as owner_id FROM categories as c inner join offers as o on c.id = o.category_id 
+                  inner join profiles as p on o.owner_id = p.user_id
+                  inner join offer_photos as op on op.offer_id = o.id
+                  where o.status = 1 group by o.id order by RAND() limit 12';
+        $offers = Categories::findAllBySql($query);
+        return $offers;
+    }
+
 
 }

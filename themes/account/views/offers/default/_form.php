@@ -102,13 +102,59 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-6">
-           
-                <?php echo $form->labelEx($model,'age_from');?>
-            
-        </div>
-    </div>
+        <div class="row">
+            <?php echo $form->labelEx($model,'age_from'); ?>
+                   <div class="col-sm-1">
+
+                          <?php
+
+                              echo $form->textField($model,'age_from',array(
+                                       'id'=>'age_from',
+                                      'onkeyup'=>'$(\'#slider_range_slider\').slider(\'values\', 0, $(this).val());',
+                                        'class'=>'form-control'
+                                        ));
+             ?>
+
+                       </div>
+            <?php echo $form->labelEx($model,'age_to'); ?>
+                   <div class="col-sm-1">
+
+                               <?php
+                                   //echo $form->labelEx($model,'age_to');
+                                  echo $form->textField($model,'age_to',array(
+                                           'id'=>'age_to',
+                                         'onkeyup'=>'$(\'#slider_range_slider\').slider(\'values\', 1, $(this).val());',
+                                          'class'=>'form-control'
+                                           ));
+               ?>
+
+                       </div>
+               </div>
+           <div class="row">
+                   <div class="col-sm-6">
+
+                               <?php
+                                   $this->widget('zii.widgets.jui.CJuiSliderInput', array(
+                                       'name'=>'slider_range',
+                                       'event'=>'change',
+                                       'options'=>array(
+                                           //'range'=>true,
+                                          'values'=>array(18,40),// default selection
+                                            'min'=>0, //minimum value for slider input
+                                           'max'=>120, // maximum value for slider input
+                                           'animate'=>false,
+                                            // on slider change event
+                                           'slide'=>'js:function(event,ui){$(\'#age_from\').val(ui.values[0]); $(\'#age_to\').val(ui.values[1]);}',
+                                            ),
+                                        // slider css options
+                                       'htmlOptions'=>array(
+                                           'style'=>'margin-top:20px;margin-bottom:20px;'
+                                                ),
+                                        ));
+                               ?>
+
+                       </div>
+                </div>
 
    <!-- <div class="row">
         <div class="col-sm-8">

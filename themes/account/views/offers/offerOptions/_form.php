@@ -40,13 +40,13 @@
             </div>
         </div>
         <div class="col-xs-2 col-sm-2">
-            <div class="form-group">
+            <!--<div class="form-group">
                 <div class="checkbox i-checks" style="margin: 0px;">
                     <?php echo $form->checkBox($model,'use_paypal'); ?>
                     <?php echo $form->labelEx($model,'use_paypal',array('style'=>'margin:0px;')); ?>
                 </div>
                 <span class="help-block m-b-none"><?php echo $form->error($model,'use_paypal'); ?></span>
-            </div>
+            </div>-->
         </div>
         <div class="col-xs-2 col-sm-2">
             <div class="form-group">

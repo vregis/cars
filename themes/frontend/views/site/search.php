@@ -23,8 +23,8 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
                         <div class="form-group">
-                            <label for="l" class="control-label col-xs-12 col-sm-4"><?= Yii::t('app', 'Location') ?> <span class="text-danger">*</span></label>
-                            <div class="col-xs-12 col-sm-8">
+                            <label style="text-align:left" for="l" class="control-label col-xs-12 col-sm-3"><?= Yii::t('app', 'Location') ?></label>
+                            <div class="col-xs-12 col-sm-9">
                                 <?= CHtml::textField('l',$model->location,array('class'=>'form-control', 'placeholder'=>Yii::t('app', 'Paris, France'), 'autocomplete'=>'off', 'id'=>'search-location')); ?>
                                 <div id="location-results-cover">
                                     <ul id="home-search-results">
@@ -34,8 +34,8 @@
                             </div>
                         </div>       
                         <div class="form-group">
-                            <label for="t" class="control-label col-xs-12 col-sm-4"><?= Yii::t('app', 'Type') ?></label>
-                            <div class="col-xs-12 col-sm-8">
+                            <label style="text-align:left" for="t" class="control-label col-xs-12 col-sm-3"><?= Yii::t('app', 'Category') ?></label>
+                            <div class="col-xs-12 col-sm-9">
                                 <?php
                                 $this->widget('application.components.widgets.feCategoryDropdown', array(
                                     'name'=>'t',
@@ -44,57 +44,77 @@
                                 ?>
                             </div>
                         </div>                        
-                    </div> 
+                    </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="form-group">
-                            <label for="age_from" class="control-label col-xs-2 col-sm-2">Age</label>
-                            <div class="col-sm-2">
-                                <?= 
-                                    CHtml::textField('age_from',$model->age_from,array( 
-                                        'id'=>'age_from',
-                                        'onkeyup'=>'$(\'#slider_range_slider\').slider(\'values\', 0, $(this).val());',
-                                        'class'=>'form-control'
-                                    )); 
-                                ?>
-                            </div>
-                            <div class="col-sm-2">
-                                <?= 
-                                    //echo $form->labelEx($model,'age_to');
-                                    CHtml::textField('age_to',$model->age_to,array( 
-                                            'id'=>'age_to',
-                                            'onkeyup'=>'$(\'#slider_range_slider\').slider(\'values\', 1, $(this).val());',
-                                            'class'=>'form-control'
-                                        ));
-                                ?>
-                              
+                            <label style="text-align:left" for="l" class="control-label col-xs-12 col-sm-3"><?= Yii::t('app', 'String') ?></label>
+                            <div class="col-xs-12 col-sm-9">
+                                <input name="st" class="form-control" type="text">
+                                <div id="location-results-cover">
+                                    <ul id="home-search-results">
+                                        <li class="first"><?= Yii::t('app', 'Search results') ?>:</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                
-                                    <?php 
-                                        $this->widget('zii.widgets.jui.CJuiSliderInput', array(
-                                        'name'=>'slider_range',
-                                        'event'=>'change',
-                                        'options'=>array(
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                            <label style="text-align:left" class="control-label col-xs-12 col-sm-3"  for="exampleInputEmail2">Age</label>
+
+                        <div class="col-sm-9">
+
+                            <div class="col-sm-1 no-paddings">
+
+                                <?php
+
+                                echo $form->textField($model,'age_from',array(
+                                    'id'=>'age_from',
+                                    'onkeyup'=>'$(\'#slider_range_slider\').slider(\'values\', 0, $(this).val());',
+                                    'class'=>'form-control small-slider',
+                                ));
+                                ?>
+
+                            </div>
+                            <div class="col-sm-10">
+
+                                <?php
+                                $this->widget('zii.widgets.jui.CJuiSliderInput', array(
+                                    'name'=>'slider_range',
+                                    'event'=>'change',
+                                    'options'=>array(
                                         //'range'=>true,
-                                        'values'=>array(0,120),// default selection
+                                        'values'=>array(18,40),// default selection
                                         'min'=>0, //minimum value for slider input
                                         'max'=>120, // maximum value for slider input
                                         'animate'=>false,
                                         // on slider change event
                                         'slide'=>'js:function(event,ui){$(\'#age_from\').val(ui.values[0]); $(\'#age_to\').val(ui.values[1]);}',
-                                        ),
-                                        // slider css options
-                                        'htmlOptions'=>array(
-                                        'style'=>'margin-top:20px;margin-bottom:20px;'
-                                         ),
-                                        ));
-                                    ?>
-                       
+                                    ),
+                                    // slider css options
+                                    'htmlOptions'=>array(
+                                        'style'=>'margin-top:20px;margin-bottom:20px; width:260px; margin-left:10px'
+                                    ),
+                                ));
+                                ?>
+
+                            </div>
+                            <div class="col-sm-1 no-paddings">
+
+                                <?php
+                                //echo $form->labelEx($model,'age_to');
+                                echo $form->textField($model,'age_to',array(
+                                    'id'=>'age_to',
+                                    'onkeyup'=>'$(\'#slider_range_slider\').slider(\'values\', 1, $(this).val());',
+                                    'class'=>'form-control, small-slider'
+                                ));
+                                ?>
+
                             </div>
                         </div>
-                    </div> 
+                    </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6"></div>
                     <div class="col-xs-12 col-md-6">
                         <!-- <div class="form-group">
                             <label for="abc" class="control-label col-xs-12 col-sm-4"><?= Yii::t('app', 'Date Period') ?></label>
@@ -103,8 +123,8 @@
                             </div>
                         </div>     -->   
                         <div class="form-group">
-                            <label for="abc" class="control-label col-xs-12 col-sm-4"><?= Yii::t('app', 'Rating') ?></label>
-                            <div class="col-xs-12 col-sm-8">                                
+                            <label style="text-align:left;" for="abc" class="control-label col-xs-12 col-sm-3"><?= Yii::t('app', 'Rating') ?></label>
+                            <div class="col-xs-12 col-sm-9">
                                 <ul class="star-rating">
                                     <li data-value="1"><i class="fa fa-star-o"></i></li>
                                     <li data-value="2"><i class="fa fa-star-o"></i></li>
@@ -167,6 +187,7 @@
                 </div>                
             </div>
         <?php $this->endWidget(); ?>
+
         
         <div id="search-results-cover">
             <div id="search-map">
