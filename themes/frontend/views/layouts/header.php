@@ -8,7 +8,7 @@
 	<!--[if IE]>
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<![endif]-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <meta name="robots" content="index, follow" />
     <title><?= CHtml::encode($this->pageTitle) ?></title>
     <!-- ////////////////////////////////// -->
@@ -58,7 +58,13 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-    <?= SiteVars::v('HEADER_LIKES') ?>    
+    <?= SiteVars::v('HEADER_LIKES') ?>
+
+    <style>
+        .container{
+            width:960px !important;
+        }
+    </style>
    
 </head>
 <body data-language="<?= Yii::app()->language ?>">     

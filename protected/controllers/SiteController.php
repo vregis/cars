@@ -85,7 +85,7 @@ class SiteController extends Controller
         
         $result = array();
         
-        $request_url = 'https://maps.googleapis.com/maps/api/place/autocomplete/json?input='.$text.'&types=geocode&key='.Yii::app()->params['GooglePlacesAPI'];
+        $request_url = 'https://maps.googleapis.com/maps/api/place/autocomplete/json?input='.$text.'&types=geocode&components=country:ru&key='.Yii::app()->params['GooglePlacesAPI'];
         $response_json = file_get_contents($request_url);
         
         $response_obj = json_decode($response_json);

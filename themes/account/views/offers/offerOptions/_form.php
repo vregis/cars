@@ -91,7 +91,7 @@
             </div>
         </div> 
     </div>
- <div class="row"> 
+ <!--<div class="row">
 <div class="col-xs-4 col-sm-4">
     <h3>Working Hours</h3>  
     <div class="row" style="margin-top:15px;">
@@ -116,7 +116,7 @@
         <div class="col-xs-1 col-sm-1" style="margin-right:20px;"><?php echo $form->labelEx($model,'sun'); ?></div><div class="col-xs-2 col-sm-2"><?php echo $form->textField($model,'sun'); ?></div>
     </div>
     </div>
-    </div>
+    </div>-->
     <br />
     <div class="form-group">
         <button class="btn btn-success" type="submit" name="submit" value="submit"><?= Yii::t('app', 'Submit') ?></button>

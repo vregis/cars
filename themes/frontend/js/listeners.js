@@ -234,6 +234,7 @@ $(document).ready(function() {
         $('#ao_button, #op_button').click(function() {
 
             var owner_id = $(this).attr('owner_id');
+            var phone = $(this).attr('data-phone');
             if($(this).attr("class")!="user-phone"){
                 $('#'+$(this).attr('data-target')).submit();
             }else{
@@ -248,8 +249,8 @@ $(document).ready(function() {
                     },
                     success: function(data){
                         if(data){
-                            $('#op_button').html(data);
-                            $('#ao_button').html(data);
+                            $('#op_button').html(phone);
+                            $('#ao_button').html(phone);
 
                         }
                     }
@@ -264,7 +265,7 @@ $(document).ready(function() {
 
             var phone = $(this).attr('phone');
             if(phone != ''){
-                $(this).html(phone);
+                $('#op_button').html(phone);
             }
 
         });

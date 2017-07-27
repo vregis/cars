@@ -300,13 +300,13 @@ class Categories extends CActiveRecord
     public static function getListDataGrouped()
     {               
         $criteria = new CDbCriteria(array(
-            'condition' => '`t`.`parent_id` IS NOT NULL AND `t`.parent_id NOT IN (1,2,3)',
+            'condition' => '`t`.`parent_id` IS NOT NULL',
             'with' => array('parent'),
             'order' => '`parent`.`order` ASC, `t`.`order` ASC',
         ));
 
         $array = Categories::model()->findAll($criteria);      
-        $list = CHtml::listData($array, 'id', 'name', function($data) {return $data->parent->parent->name;});
+        $list = CHtml::listData($array, 'id', 'name', function($data) {return $data->parent->name;});
 
         return $list;
     }

@@ -37,16 +37,16 @@ if (!empty($model->addresses))
                         <div class="offer-price-large">
                             <p class="price-type"><?= Yii::t('app', 'Price') ?></p>
                             <p class="price-value"><?= $this->formatPrice($model->publicOptions[0]->price_daily); ?></p>       
-                            <a href="#" id="op_button" owner_id="<?=$model->owner->id; ?>" <?= !empty($model->publicOptions[0]->use_paypal)? 'class="btn btn-success btn-solid btn-block btn-submit" data-target="additional-options-form">Order and Pay' : 'class="user-phone">Phone #'; ?>  <i class="fa fa-angle-right"></i></a><br />
+                            <a href="#" id="op_button" owner_id="<?=$model->owner->id; ?>" data-phone="<?php echo $model->phone?>" <?= !empty($model->publicOptions[0]->use_paypal)? 'class="btn btn-success btn-solid btn-block btn-submit" data-target="additional-options-form">Order and Pay' : 'class="user-phone">Телефон'; ?>  <i class="fa fa-angle-right"></i></a><br />
                         </div>
                         <div class="client-info">
                             <div class="owner-preview">
                                 <?= $model->owner->profile->photoPreview ?>
                                 <?= CHtml::link($model->owner->profile->shortName, $model->owner->profileUrl, array('class' => 'owner-name')) ?> 
-                                <?php $this->widget('application.components.widgets.feRatingStars', array(
+                               <!--  <?php $this->widget('application.components.widgets.feRatingStars', array(
                                     'rating'=>$model->owner->rating,
                                     'htmlOptions'=>array('class' => 'star-rating-small'),
-                                )); ?>
+                                )); ?> -->
                             </div>
                             <?= (($model->owner->profile->is_company)?('<p><strong>'.Yii::t('app', 'Company account').'</strong></p>'):('')) ?>
                             <p><?= Yii::t('app', 'Club member since') ?> <?= Yii::app()->locale->dateFormatter->format('yyyy', $model->owner->createtime); ?></p>
@@ -65,7 +65,7 @@ if (!empty($model->addresses))
                                 <i class="fa fa-heart-o"></i>
                                 <i class="fa fa-heart"></i>
                             </a>
-                            <?php if (!empty($model->primaryPhoto)) echo CHtml::link(CHtml::image(Yii::app()->request->hostInfo.'/resources/offers/600_'.$model->primaryPhoto->filename, '', array('class' => 'img-responsive')), Yii::app()->request->hostInfo.'/resources/offers/'.$model->primaryPhoto->filename, array('rel' => 'group', 'class' => 'fancybox')); ?>
+                            <?php if (!empty($model->primaryPhoto)) echo CHtml::link(CHtml::image(Yii::app()->request->hostInfo.'/resources/offers/600_'.$model->primaryPhoto->filename, '', array('class' => 'img-responsive')), Yii::app()->request->hostInfo.'/resources/offers/'.$model->primaryPhoto->filename, array('rel' => 'group', 'class' => 'fancybox', 'data-fancybox-group' => 'group')); ?>
                             <div class="row offer-photos-other">
                                 <?php
                                 if (!empty($model->photos)) {
@@ -82,7 +82,7 @@ if (!empty($model->addresses))
                                             echo CHtml::link(
                                                     CHtml::image(Yii::app()->request->hostInfo.'/resources/offers/200_'.$photo->filename, '', array('class' => 'img-responsive')),
                                                     Yii::app()->request->hostInfo.'/resources/offers/'.$photo->filename, 
-                                                    array('rel' => 'group', 'class' => 'fancybox')
+                                                    array('rel' => 'group', 'class' => 'fancybox', 'data-fancybox-group' => 'group')
                                                 );
                                             echo '</div>';
                                         } elseif ($key >= 6) 
@@ -94,7 +94,7 @@ if (!empty($model->addresses))
                                         echo CHtml::link(
                                                 CHtml::image(Yii::app()->request->hostInfo.'/resources/offers/200_'.$overphotos[0]->filename, '', array('class' => 'img-responsive')),
                                                 Yii::app()->request->hostInfo.'/resources/offers/'.$overphotos[0]->filename, 
-                                                array('rel' => 'group', 'class' => 'fancybox')
+                                                array('rel' => 'group', 'class' => 'fancybox', 'data-fancybox-group' => 'group')
                                             );
                                         echo '</div>';
                                     } elseif (count($overphotos) > 1) {
@@ -102,12 +102,12 @@ if (!empty($model->addresses))
                                         echo CHtml::link(
                                                 CHtml::image(Yii::app()->request->hostInfo.'/resources/offers/200_'.$overphotos[0]->filename, '', array('class' => 'img-responsive')),
                                                 Yii::app()->request->hostInfo.'/resources/offers/'.$overphotos[0]->filename, 
-                                                array('rel' => 'group', 'class' => 'fancybox photo-under')
+                                                array('rel' => 'group', 'class' => 'fancybox photo-under', 'data-fancybox-group' => 'group')
                                             );
                                         echo CHtml::link(
                                                 CHtml::image(Yii::app()->theme->baseUrl.'/img/offer-photos-more.png', '', array('class' => 'img-responsive')),
                                                 Yii::app()->request->hostInfo.'/resources/offers/'.$overphotos[0]->filename, 
-                                                array('rel' => 'group', 'class' => 'fancybox photo-over')
+                                                array('rel' => 'group', 'class' => 'fancybox photo-over', 'data-fancybox-group' => 'group')
                                             );
                                         echo '</div>';
                                     }
@@ -116,11 +116,11 @@ if (!empty($model->addresses))
 
                             </div>
 
-                            <?php if (!empty($model->video_link)) echo CHtml::link('<i class="fa fa-youtube-play fa-fw"></i> '.Yii::t('app', 'Watch video'), $model->video_link, array('class' => 'btn btn-danger btn-block fancybox.iframe video-fancybox', 'rel' => 'group1')) ?>
-                            <!--
+                            <?php if (!empty($model->video_link)) echo CHtml::link('<i class="fa fa-youtube-play fa-fw"></i> '.Yii::t('app', 'Watch video'), $model->video_link, array('class' => 'btn btn-danger btn-block fancybox.iframe video-fancybox', 'rel' => 'group1', 'data-fancybox-group' => 'group')) ?>
+
                             <?php if($days):?>
                                 <?php $i = 0; ?>
-                            <table style="width:100%">
+                           <!-- <table style="width:100%">
                                 <?php foreach($days as $key => $value):?>
                                 <?php if(!$value[0]): ?>
                                 <?php continue ?>
@@ -141,9 +141,9 @@ if (!empty($model->addresses))
                                 <?php endif;?>
                                 <?php endforeach;?>
 
-                            </table>
+                            </table>-->
                             <?php endif;?>
-                            -->
+
 
                             <?php
                             if (!empty($model->parameters) && count($model->parameters) < 10) {
@@ -187,13 +187,13 @@ if (!empty($model->addresses))
                         <div class="col-xs-12 col-sm-8 col-md-8">
                             <h1><?= $model->title ?> <span class="text-muted">[<?= $model->year ?>]</span></h1>
 
-                            <div class="offer-rating">
+                            <!-- <div class="offer-rating">
                                 <?php $this->widget('application.components.widgets.feRatingStars', array(
                                     'rating'=>$model->rating,
                                     'htmlOptions'=>array('class' => 'star-rating-small'),
                                 )); ?>
-                                from <?= $this->plural(count($model->reviews), Yii::t('app', 'client1'), Yii::t('app', 'clients2'), Yii::t('app', 'clients5')); ?>
-                            </div>
+                                От <?= $this->plural(count($model->reviews), Yii::t('app', 'client1'), Yii::t('app', 'clients2'), Yii::t('app', 'clients5')); ?>
+                            </div> -->
 
                             <p><?= $model->description ?></p>
 
@@ -250,9 +250,9 @@ if (!empty($model->addresses))
                             <hr class="dotted-line" />
 
                             <div class="row hidden-xs">
-                                <div class="col-xs-12 col-sm-4 text-center">
+                               <!--  <div class="col-xs-12 col-sm-4 text-center">
                                     <a href="#offer-tabs" data-target="offer-tabs" data-tab="offer-reviews" class="smooth-tab dashed"><?= Yii::t('app', 'Reviews') ?></a>
-                                </div>
+                                </div> -->
                                 <div class="col-xs-12 col-sm-4 text-center">
                                     <a href="#offer-tabs" data-target="offer-tabs" data-tab="offer-comments" class="smooth-tab dashed"><?= Yii::t('app', 'Comments') ?></a>
                                 </div>
@@ -327,7 +327,7 @@ if (!empty($model->addresses))
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-4 col-md-3">
-                                <a href="#" id="show_offer_phone" phone="<?=$model->phone; ?>" <?= !empty($model->publicOptions[0]->use_paypal)? 'class="btn btn-success btn-solid btn-block btn-submit" data-target="additional-options-form">Order and Pay' : 'class="user-phone">Phone #'; ?>  <i class="fa fa-angle-right"></i></a><br />
+                                <a href="#" id="show_offer_phone" phone="<?=$model->phone; ?>" <?= !empty($model->publicOptions[0]->use_paypal)? 'class="btn btn-success btn-solid btn-block btn-submit" data-target="additional-options-form">Order and Pay' : 'class="user-phone">Телефон'; ?>  <i class="fa fa-angle-right"></i></a><br />
  
                             </div>
                         </div>
@@ -336,7 +336,7 @@ if (!empty($model->addresses))
                     
                     <ul class="nav nav-tabs offer-nav" id="offer-tabs" role="tablist">
                         
-                        <li role="presentation" class="active"><a href="#offer-reviews" aria-controls="offer-reviews" role="tab"><?= Yii::t('app', 'Reviews') ?> (<?= count($model->reviews); ?>)</a></li>
+                        <!-- <li role="presentation" class="active"><a href="#offer-reviews" aria-controls="offer-reviews" role="tab"><?= Yii::t('app', 'Reviews') ?> (<?= count($model->reviews); ?>)</a></li> -->
                         <li role="presentation"><a href="#offer-comments" aria-controls="offer-comments" role="tab"><?= Yii::t('app', 'Comments') ?> (<?= count($model->comments); ?>)</a></li>
                         <li role="presentation"><a href="#offer-faq" aria-controls="offer-faq" role="tab"><?= Yii::t('app', 'FAQ') ?> (<?= count($model->faq); ?>)</a></li>
                     </ul>
@@ -359,10 +359,10 @@ if (!empty($model->addresses))
                             <div class="row">
                                 <div class="col-xs-12 col-md-8">
                                     <h4><?= Yii::t('app', 'Leave your comment') ?>:</h4>
-                                    <div id="mc-container"></div>
+									<div id="mc-review"></div>
 <script type="text/javascript">
 cackle_widget = window.cackle_widget || [];
-cackle_widget.push({widget: 'Comment', id: 50473});
+cackle_widget.push({widget: 'Review', id: 54050});
 (function() {
     var mc = document.createElement('script');
     mc.type = 'text/javascript';
@@ -371,7 +371,7 @@ cackle_widget.push({widget: 'Comment', id: 50473});
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
 })();
 </script>
-<a id="mc-link" href="http://cackle.me">Комментарии для сайта <b style="color:#4FA3DA">Cackl</b><b style="color:#F65077">e</b></a>
+<!-- <a id="mc-link" href="http://cackle.me">Отзывы для сайта <b style="color:#4FA3DA">Cackl</b><b style="color:#F65077">e</b></a> -->
                                     <!-- <form action="" method="POST" id="form-root">
                                         <div class="form-group">
                                             <label for="abc" class="control-label"><?= Yii::t('app', 'Your message') ?>:</label>

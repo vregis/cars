@@ -5,7 +5,7 @@
                <div class="home-search-cover hidden-xs">
                     <a href="/s?t=3">
                         <video muted loop autoplay="autoplay">
-                            <source src="resources/articles/11680844.mp4" type="video/mp4">
+                            <source src="resources/articles/GETUPWAY.mp4" type="video/mp4">
                         </video>
                     </a>
                 </div>
@@ -317,23 +317,21 @@
                             <div class="home-areas">
                                 <a href="/u/<?php echo $offer->owner_id?>"><img class="main-prof-img" src="/resources/users/<?php echo $offer->photo?>">
                                 </a>
-                                    <div class="main-prof-name"><?php echo $offer->ln?> <?php echo $offer->fn?></div>
+                                <div class="main-prof-name"><?php echo $offer->ln?> <?php echo $offer->fn?></div>
 
                                 <img class="img-responsive" src="/resources/offers/<?php echo $offer->filename?$offer->filename:'20170122164520_2c246278.jpg'?>">
 
                             </div>
                             <p style="font-weight: bold"><?php echo $offer->title?></p>
                             <?php
-
-                                echo '<p>'.mb_substr(strip_tags($offer->descr), 0, 128, 'UTF-8').'...</p>';
-                                echo '<p class="text-right"><a href="/s/~o'.$offer->offer_id.'">Read more ...</a></p>';
-
+                            echo '<p>'.mb_substr(strip_tags($offer->descr), 0, 128, 'UTF-8').'...</p>';
+                            echo '<p class="text-right"><a href="/s/~o'.$offer->offer_id.'">Read more ...</a></p>';
                             ?>
                         </div>
                     </div>
-                     <?php if($i % 3 == 0):?>
+                    <?php if($i % 3 == 0):?>
                         </div>
-                     <?php endif;?>
+                    <?php endif;?>
                 <?php endforeach;?>
             </div>
         </div>
