@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="<?= Yii::app()->themeManager->getTheme('frontend')->baseUrl ?>/css/animate.css">
     <link rel="stylesheet" href="<?= Yii::app()->themeManager->getTheme('frontend')->baseUrl ?>/css/style.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.css">
+
     <!-- ClockPicker -->
     <link rel="stylesheet" href="<?= Yii::app()->themeManager->getTheme('frontend')->baseUrl ?>/css/plugins/clockpicker/clockpicker.css">
 

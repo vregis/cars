@@ -58,11 +58,11 @@ class SiteController extends Controller
 	{
 		return array(
             array('allow',  // deny all users
-                'actions'=>array('index','search'),
+                'actions'=>array('index','search', 'sitemap'),
                 'users'=>array('*'),
             ),
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index', 'search', 'siteSearch', 'feedback', 'currencies', 'languages', 'subscription', 'subscribed', 'unsubscribe', 'error', 'logout', 'sitemapxml', 'socialLogin', 'sitemap', 'switchSidebar', 'gMapsAutocomplete','paypal'),
+				'actions'=>array('index', 'search', 'siteSearch', 'feedback', 'currencies', 'languages', 'subscription', 'subscribed', 'unsubscribe', 'error', 'logout', 'sitemapxml', 'socialLogin', 'switchSidebar', 'gMapsAutocomplete','paypal'),
 				//'users'=>array('*'),
                 'users'=>array('@'),
 			),
@@ -141,7 +141,8 @@ class SiteController extends Controller
         $mergedOffers = array_merge($earthOffers, $waterOffers, $airOffers);
         shuffle($mergedOffers);*/
 
-       $mergedOffers = (new Categories())->getRandomOffers();
+       $categories = new Categories();
+       $mergedOffers = $categories->getRandomOffers();
 
         Yii::app()->theme = 'frontend';
         $this->layout = 'one_column';    

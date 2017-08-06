@@ -312,9 +312,9 @@
                     <?php if($i % 3 == 0):?>
                         <div class="row">
                     <?php endif;?>
-                    <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
                         <div class="home-areas-cover">
-                            <div class="home-areas">
+                            <div style="height:200px" class="home-areas">
                                 <a href="/u/<?php echo $offer->owner_id?>"><img class="main-prof-img" src="/resources/users/<?php echo $offer->photo?>">
                                 </a>
                                 <div class="main-prof-name"><?php echo $offer->ln?> <?php echo $offer->fn?></div>

@@ -509,14 +509,14 @@ $(document).ready(function() {
     /*
      * Fancybox
      */
-    if ($('.fancybox').length) 
+  /*  if ($('.fancybox').length)
         $('.fancybox').fancybox({padding: 0});
     if ($('.video-fancybox').length) 
         $('.video-fancybox').fancybox({
             padding: 0       
-        });
-    
-    
+        });*/
+
+    $("[data-fancybox]").fancybox();
     
     /*
      * Styled select

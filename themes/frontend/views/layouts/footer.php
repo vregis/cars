@@ -239,10 +239,12 @@
     <script src="<?= Yii::app()->themeManager->getTheme('frontend')->baseUrl ?>/js/daterangepicker/jquery.daterangepicker.min.js"></script>
     <script src="<?= Yii::app()->themeManager->getTheme('frontend')->baseUrl ?>/js/bootstrap-select/bootstrap-select.min.js"></script>
     
-    <script src="<?= Yii::app()->themeManager->getTheme('frontend')->baseUrl ?>/js/fancybox/jquery.fancybox.pack.js"></script>
+  <!--  <script src="<?= Yii::app()->themeManager->getTheme('frontend')->baseUrl ?>/js/fancybox/jquery.fancybox.pack.js"></script>
     <script src="<?= Yii::app()->themeManager->getTheme('frontend')->baseUrl ?>/js/fancybox/jquery.fancybox-thumbs.js"></script>
     <script src="<?= Yii::app()->themeManager->getTheme('frontend')->baseUrl ?>/js/fancybox/jquery.fancybox-media.js"></script>
-    <script src="<?= Yii::app()->themeManager->getTheme('frontend')->baseUrl ?>/js/fancybox/jquery.fancybox-buttons.js"></script>
+    <script src="<?= Yii::app()->themeManager->getTheme('frontend')->baseUrl ?>/js/fancybox/jquery.fancybox-buttons.js"></script>-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.js"></script>
 
     <!-- Datepicker-->
     <script src="<?= Yii::app()->themeManager->getTheme('frontend')->baseUrl ?>/js/plugins/datapicker/bootstrap-datepicker.js"></script>  

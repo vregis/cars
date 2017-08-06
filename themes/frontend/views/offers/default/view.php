@@ -65,7 +65,7 @@ if (!empty($model->addresses))
                                 <i class="fa fa-heart-o"></i>
                                 <i class="fa fa-heart"></i>
                             </a>
-                            <?php if (!empty($model->primaryPhoto)) echo CHtml::link(CHtml::image(Yii::app()->request->hostInfo.'/resources/offers/600_'.$model->primaryPhoto->filename, '', array('class' => 'img-responsive')), Yii::app()->request->hostInfo.'/resources/offers/'.$model->primaryPhoto->filename, array('rel' => 'group', 'class' => 'fancybox', 'data-fancybox-group' => 'group')); ?>
+                            <?php if (!empty($model->primaryPhoto)) echo CHtml::link(CHtml::image(Yii::app()->request->hostInfo.'/resources/offers/600_'.$model->primaryPhoto->filename, '', array('class' => 'img-responsive')), Yii::app()->request->hostInfo.'/resources/offers/'.$model->primaryPhoto->filename, array('rel' => 'group', 'data-fancybox' => 'gallery',  'class' => 'fancybox')); ?>
                             <div class="row offer-photos-other">
                                 <?php
                                 if (!empty($model->photos)) {
@@ -82,7 +82,7 @@ if (!empty($model->addresses))
                                             echo CHtml::link(
                                                     CHtml::image(Yii::app()->request->hostInfo.'/resources/offers/200_'.$photo->filename, '', array('class' => 'img-responsive')),
                                                     Yii::app()->request->hostInfo.'/resources/offers/'.$photo->filename, 
-                                                    array('rel' => 'group', 'class' => 'fancybox', 'data-fancybox-group' => 'group')
+                                                    array('rel' => 'group', 'data-fancybox' => 'gallery', 'class' => 'fancybox')
                                                 );
                                             echo '</div>';
                                         } elseif ($key >= 6) 
@@ -94,7 +94,7 @@ if (!empty($model->addresses))
                                         echo CHtml::link(
                                                 CHtml::image(Yii::app()->request->hostInfo.'/resources/offers/200_'.$overphotos[0]->filename, '', array('class' => 'img-responsive')),
                                                 Yii::app()->request->hostInfo.'/resources/offers/'.$overphotos[0]->filename, 
-                                                array('rel' => 'group', 'class' => 'fancybox', 'data-fancybox-group' => 'group')
+                                                array('rel' => 'group', 'data-fancybox' => 'gallery', 'class' => 'fancybox')
                                             );
                                         echo '</div>';
                                     } elseif (count($overphotos) > 1) {
@@ -102,12 +102,12 @@ if (!empty($model->addresses))
                                         echo CHtml::link(
                                                 CHtml::image(Yii::app()->request->hostInfo.'/resources/offers/200_'.$overphotos[0]->filename, '', array('class' => 'img-responsive')),
                                                 Yii::app()->request->hostInfo.'/resources/offers/'.$overphotos[0]->filename, 
-                                                array('rel' => 'group', 'class' => 'fancybox photo-under', 'data-fancybox-group' => 'group')
+                                                array('rel' => 'group', 'data-fancybox' => 'gallery', 'class' => 'fancybox photo-under')
                                             );
                                         echo CHtml::link(
                                                 CHtml::image(Yii::app()->theme->baseUrl.'/img/offer-photos-more.png', '', array('class' => 'img-responsive')),
                                                 Yii::app()->request->hostInfo.'/resources/offers/'.$overphotos[0]->filename, 
-                                                array('rel' => 'group', 'class' => 'fancybox photo-over', 'data-fancybox-group' => 'group')
+                                                array('rel' => 'group', 'data-fancybox' => 'gallery', 'class' => 'fancybox photo-over')
                                             );
                                         echo '</div>';
                                     }
@@ -116,7 +116,7 @@ if (!empty($model->addresses))
 
                             </div>
 
-                            <?php if (!empty($model->video_link)) echo CHtml::link('<i class="fa fa-youtube-play fa-fw"></i> '.Yii::t('app', 'Watch video'), $model->video_link, array('class' => 'btn btn-danger btn-block fancybox.iframe video-fancybox', 'rel' => 'group1', 'data-fancybox-group' => 'group')) ?>
+                            <?php if (!empty($model->video_link)) echo CHtml::link('<i class="fa fa-youtube-play fa-fw"></i> '.Yii::t('app', 'Watch video'), $model->video_link, array('class' => 'btn btn-danger btn-block fancybox.iframe video-fancybox', 'rel' => 'group1', 'data-fancybox' => 'video')) ?>
 
                             <?php if($days):?>
                                 <?php $i = 0; ?>
