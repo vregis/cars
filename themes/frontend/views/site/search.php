@@ -137,7 +137,7 @@
                         </div>     
                     </div> 
                 </div>   
-                <div class="collapse<?= ((isset($_GET['po']) || isset($_GET['ap']))?(' in'):('')) ?>" id="advanced-search">
+                <!--<div class="collapse<?= ((isset($_GET['po']) || isset($_GET['ap']))?(' in'):('')) ?>" id="advanced-search">
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <div class="form-group">
@@ -156,7 +156,7 @@
                             </div>                     
                         </div>  
                     </div> 
-                </div>
+                </div>-->
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-md-offset-6">    
                         <div class="form-group">   
@@ -174,7 +174,7 @@
                 <div class="container">
                     <div class="row">   
                         <div class="col-xs-12 col-sm-4 col-md-4 col-md-offset-2">
-                            <a href="#advanced-search" class="more-options dashed" data-toggle="collapse" aria-expanded="false" aria-controls="advanced-search"><?= Yii::t('app', 'Get more search options') ?></a>
+                          <!--  <a href="#advanced-search" class="more-options dashed" data-toggle="collapse" aria-expanded="false" aria-controls="advanced-search"><?= Yii::t('app', 'Get more search options') ?></a>-->
                         </div>
                         <div class="col-xs-12 col-sm-8 col-md-6">
                             <?= CHtml::hiddenField('sort', $model->sort, array('id' => 'search-sort-value')) ?>
