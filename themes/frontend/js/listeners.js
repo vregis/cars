@@ -271,6 +271,17 @@ $(document).ready(function() {
         });
     }
 
+    if ($('#op_button').length) {
+        $('#op_button').click(function() {
+
+            var phone = $('#show_offer_phone').attr('phone');
+            if(phone != ''){
+                $('#op_button').html(phone);
+            }
+
+        });
+    }
+
 
     /*
      * Get Additions

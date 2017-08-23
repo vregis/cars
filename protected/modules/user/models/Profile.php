@@ -560,11 +560,10 @@ public function phoneByID($id)
             'Total' => 0,
             'Improvements' => array(),
         );
-        
         if (!empty($this->firstname)) $result['Personal Info'] += 15; else $result['Improvements']['Personal Info'][] = array('15', 'Add your first name');
         if (!empty($this->lastname)) $result['Personal Info'] += 15; else $result['Improvements']['Personal Info'][] = array('15', 'Add your last name');
         if (!empty($this->birthday)) $result['Personal Info'] += 15; else $result['Improvements']['Personal Info'][] = array('15', 'Add your birthday');
-        if (!empty($this->is_company)) $result['Personal Info'] += 15; else $result['Improvements']['Personal Info'][] = array('15', 'Mark yourself as a company');
+        if ($this->is_company == 0) $result['Personal Info'] += 15; else $result['Improvements']['Personal Info'][] = array('15', 'Mark yourself as a company');
         if (!empty($this->country_id)) $result['Personal Info'] += 15; else $result['Improvements']['Personal Info'][] = array('15', 'Add your country');
         if (!empty($this->city)) $result['Personal Info'] += 15; else $result['Improvements']['Personal Info'][] = array('15', 'Add your city');
         

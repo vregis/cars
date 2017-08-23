@@ -201,11 +201,15 @@
         $('.last_name_div').find('label').html('Название компании <span class="required">*</span>');
         $('.first_name_div').find('label').html('Company ID <span class="required">*</span>');
         $('.not_for_company').hide();
+        $('#Profile_is_company').val(1);
+        $('#ytProfile_is_company').val(1);
     }
     
     function isUser() {
         $('.last_name_div').find('label').html('Фамилия');
         $('.first_name_div').find('label').html('Имя <span class="required">*</span>');
         $('.not_for_company').show();
+        $('#Profile_is_company').val(0);
+        $('#ytProfile_is_company').val(0);
     }
 </script>

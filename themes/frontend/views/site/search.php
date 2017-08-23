@@ -20,6 +20,7 @@
             )
         )); ?>  
             <div class="container">
+                <div style="margin-bottom: 30px;font-size: 20px;">Поиск только по территории России</div>
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
                         <div class="form-group">
@@ -60,7 +61,7 @@
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="form-group">
-                            <label style="text-align:left" class="control-label col-xs-12 col-sm-3"  for="exampleInputEmail2">Age</label>
+                            <label style="text-align:left" class="control-label col-xs-12 col-sm-3"  for="exampleInputEmail2">Возраст</label>
 
                         <div class="col-sm-9">
 
@@ -122,7 +123,7 @@
                                 <span class="date-icon"><i class="fa fa-calendar"></i></span><?= CHtml::textField('dd',((!empty($_GET['dd']))?($_GET['dd']):($model->date_since.' ~ '.$model->date_for)),array('class'=>'form-control daterangepicker', 'placeholder'=>Yii::t('app', 'Set actual dates...'), 'autocomplete'=>'off')); ?>
                             </div>
                         </div>     -->   
-                        <div class="form-group">
+                     <!--   <div class="form-group">
                             <label style="text-align:left;" for="abc" class="control-label col-xs-12 col-sm-3"><?= Yii::t('app', 'Rating') ?></label>
                             <div class="col-xs-12 col-sm-9">
                                 <ul class="star-rating">
@@ -134,7 +135,7 @@
                                     <li class="star-result"><?= CHtml::hiddenField('s',$model->rating); ?> <?= Yii::t('app', '<span>all</span> offers') ?></li>
                                 </ul>
                             </div>
-                        </div>     
+                        </div>     -->
                     </div> 
                 </div>   
                 <!--<div class="collapse<?= ((isset($_GET['po']) || isset($_GET['ap']))?(' in'):('')) ?>" id="advanced-search">
@@ -158,12 +159,12 @@
                     </div> 
                 </div>-->
                 <div class="row">
-                    <div class="col-xs-12 col-md-6 col-md-offset-6">    
+                    <div class="col-xs-6 col-md-6 col-md-offset-6">
                         <div class="form-group">   
                             <div class="col-xs-12 col-sm-8 col-sm-offset-4">
                                 <br />
                                 <a href="#" class="btn btn-default btn-submit" data-target="main-search"><i class="fa fa-search fa-before"></i> <?= Yii::t('app', 'Find offers') ?></a>
-                                <input type="reset" value="Reset search" class="btn btn-muted" data-target="main-search">
+                                <input type="reset" value="Сброс поиска" class="btn btn-muted" data-target="main-search">
                                 <input type="submit" style="display: none;">
                             </div>       
                         </div>       
@@ -179,9 +180,9 @@
                         <div class="col-xs-12 col-sm-8 col-md-6">
                             <?= CHtml::hiddenField('sort', $model->sort, array('id' => 'search-sort-value')) ?>
                             <span class="hidden-xs"><?= Yii::t('app', 'Sort Order') ?></span>
-                            <a href="#" class="results-sort" data-type="rating" data-value="<?= (($model->sort & 2)?(2):(0)) ?>">by Rating <i class="fa fa-caret-<?= (($model->sort & 2)?('down'):('up')) ?>"></i></a>
+                          <!--  <a href="#" class="results-sort" data-type="rating" data-value="<?= (($model->sort & 2)?(2):(0)) ?>">by Rating <i class="fa fa-caret-<?= (($model->sort & 2)?('down'):('up')) ?>"></i></a> -->
                             <!--<a href="#" class="results-sort" data-type="distance" data-value="<?= (($model->sort & 4)?(4):(0)) ?>">by Distance <i class="fa fa-caret-<?= (($model->sort & 4)?('down'):('up')) ?>"></i></a>-->
-                            <a href="#" class="results-sort" data-type="price" data-value="<?= (($model->sort & 8)?(8):(0)) ?>">by Price <i class="fa fa-caret-<?= (($model->sort & 8)?('down'):('up')) ?>"></i></a>
+                            <a href="#" class="results-sort" data-type="price" data-value="<?= (($model->sort & 8)?(8):(0)) ?>">Цена <i class="fa fa-caret-<?= (($model->sort & 8)?('down'):('up')) ?>"></i></a>
                         </div>
                     </div>                
                 </div>                

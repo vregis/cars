@@ -319,7 +319,7 @@
                                 </a>
                                 <div class="main-prof-name"><?php echo $offer->ln?> <?php echo $offer->fn?></div>
 
-                                <img class="img-responsive" src="/resources/offers/<?php echo $offer->filename?$offer->filename:'20170122164520_2c246278.jpg'?>">
+                                <img style="height:200px; width: 300px;" class="img-responsive" src="/resources/offers/<?php echo $offer->filename?$offer->filename:'20170122164520_2c246278.jpg'?>">
 
                             </div>
                             <p style="font-weight: bold"><?php echo $offer->title?></p>
