@@ -99,6 +99,7 @@ return array(
     'socialLogin'=>'/site/socialLogin',
     'goodbye'=>'/user/logout/logout',
     'welcome'=>'/user/registration/registration',
+    'mail-registration'=>'/user/registration/mailRegistration',
     'recover-pass'=>'/user/recovery/recovery',
     'active/<email>/<activkey>'=>'/user/activation/activation',
 

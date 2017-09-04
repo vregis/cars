@@ -105,4 +105,74 @@ class RegistrationController extends Controller
             $this->render('/user/registration',array('model'=>$model,'profile'=>$profile));
         }
 	}
+
+    /**
+     * Registration user
+     */
+    public function actionMailRegistration() {
+
+        Yii::app()->theme = 'frontend';
+        $this->layout='//layouts/one_column';
+
+        $model = new RegistrationForm;
+        $profile=new Profile;
+        $profile->regMode = true;
+
+        // ajax validator
+        if(isset($_POST['ajax']) && $_POST['ajax']==='registration-form')
+        {
+            echo UActiveForm::validate(array($model,$profile));
+            Yii::app()->end();
+        }
+
+
+        if (Yii::app()->user->id) {
+            $this->redirect(Yii::app()->controller->module->profileUrl);
+        } else {
+            if(isset($_POST['RegistrationForm'])) {
+                $model->attributes=$_POST['RegistrationForm'];
+
+                if (empty($model->email) && !empty($model->username))
+                    $model->email = time().'@tmp.test';
+
+                if (!empty($model->email) && empty($model->username))
+                    $model->username = 'tmpname'.time();
+
+                $profile->attributes=((isset($_POST['Profile'])?$_POST['Profile']:array()));
+                $profile->firstname = $_POST['RegistrationForm']['email'];
+                $reCaptcha = new ReCaptcha;
+
+
+                if ($model->validate() && $profile->validate() /*&& $reCaptcha->checkResponse()*/) {
+                    $soucePassword = $model->password;
+                    $model->activkey=UserModule::encrypting(microtime().$model->password);
+                    $model->password=UserModule::encrypting($model->password);
+                    $model->verifyPassword=UserModule::encrypting($model->verifyPassword);
+                    $model->createtime=time();
+                    $model->lastvisit=((Yii::app()->controller->module->loginNotActiv||(Yii::app()->controller->module->activeAfterRegister&&Yii::app()->controller->module->sendActivationMail==false))&&Yii::app()->controller->module->autoLogin)?time():0;
+                    $model->superuser=0;
+                    $model->status=1;
+
+                    if ($model->save()) {
+                        $profile->user_id=$model->id;
+                        $profile->save();
+                        $identity=new UserIdentity($model->username,$soucePassword);
+                        $identity->authenticate();
+                        Yii::app()->user->login($identity,0);
+                        $user = User::model()->findByPk(Yii::app()->user->id);
+                        $this->redirect(array('/site/index'));
+
+                    }
+                } else $profile->validate();
+            }
+
+            if (stristr($model->email, '@tmp.test'))
+                $model->email = '';
+
+            if (stristr($model->username, 'tmpname'))
+                $model->username = '';
+
+            $this->render('/user/mail-registration',array('model'=>$model,'profile'=>$profile));
+        }
+    }
 }

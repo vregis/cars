@@ -144,7 +144,7 @@ class Currencies extends CActiveRecord
         else
             $value = $cur_amount;
                 
-        return $value;
+        return str_replace('$', '', $value);
     }
     
     

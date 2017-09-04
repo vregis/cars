@@ -29,10 +29,12 @@
                     'disableAjaxValidationAttributes'=>array('RegistrationForm_verifyCode'),
                     'htmlOptions' => array('class'=>'text-left', 'role'=>'form'),
                 )); ?>
+
+                <?php $userEmail = isset($_GET['mail'])?$_GET['mail']:''?>
                     
                     <div class="form-group">
                         <?php echo $form->label($model,'email',array('class'=>'control-label')); ?>
-                        <?php echo $form->textField($model,'email',array('class'=>'form-control')); ?>
+                        <?php echo $form->textField($model,'email',array('class'=>'form-control', 'value' => $userEmail)); ?>
                         <small class="text-danger"><?php echo $form->error($model,'email'); ?></small>
                     </div>
                     
@@ -52,8 +54,7 @@
                         <?php
                             echo $form->checkBox($model,'legacy');
                             echo $form->label($model,'legacy');
-                            ?>
-                        <small class="text-danger"><?php echo $form->error($model,'legacy'); ?></small>
+                        ?>
                     </div>
 
                     <div class="form-group captcha-field">
@@ -88,13 +89,3 @@
             </div>
         </div>
     </div>
-
-<script>
-    $('#RegistrationForm_legacy').val(0);
-    $('input').on('ifChecked', function(event){
-        $('#RegistrationForm_legacy').val(1);
-    });
-    $('input').on('ifUnchecked', function(event){
-        $('#RegistrationForm_legacy').val(0);
-    });
-</script>

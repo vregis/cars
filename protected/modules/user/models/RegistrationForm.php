@@ -11,10 +11,11 @@ class RegistrationForm extends User {
 	
 	public function rules() {
 		$rules = array(
-			array('password, verifyPassword, email, legacy', 'required'),
+			array('password, verifyPassword, email', 'required'),
 			array('password', 'length', 'max'=>128, 'min' => 4,'message' => UserModule::t("Incorrect password (minimal length 4 symbols).")),
 			array('email', 'email'),
 			array('email', 'unique', 'message' => UserModule::t("This user's email address already exists.")),
+            array('legacy', 'required', 'requiredValue' => 1, 'message' => 'Please, fill all fields.'),
 			array('verifyPassword', 'compare', 'compareAttribute'=>'password', 'message' => UserModule::t("Retype Password is incorrect.")),
 		);
 		if (isset($_POST['ajax']) && $_POST['ajax']==='registration-form') 
