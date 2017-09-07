@@ -580,9 +580,9 @@ class Offers extends CActiveRecord
         return $this->findAll('category_id = :categoryId', [':categoryId' => $categoryId]);
     }
 
-    public function getRandomOffersForMainPage()
-    {
-
+    public function getPriceDaily($id){
+        $price = OfferOptions::model()->find('offer_id = :offerId', [':offerId' => $id]);
+        return $price?$price->price_daily:0;
     }
 
 }

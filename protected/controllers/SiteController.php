@@ -58,7 +58,7 @@ class SiteController extends Controller
 	{
 		return array(
             array('allow',  // deny all users
-                'actions'=>array('index','search', 'sitemap'),
+                'actions'=>array('index','search', 'sitemap', 'excel'),
                 'users'=>array('*'),
             ),
 			array('allow',  // allow all users to perform 'index' and 'view' actions
@@ -804,5 +804,13 @@ class SiteController extends Controller
         $vars['pages'] = $pages;
         
         $this->render('search', $vars);
-    }    
+    }
+
+    public function actionExcel()
+    {
+        include '/var/www/cars.local/lib/PHPExcel.php';
+        $objPHPExcel = new PHPExcel();
+        var_dump($objPHPExcel);
+        die();
+    }
 }

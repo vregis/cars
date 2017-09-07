@@ -51,10 +51,11 @@ class RegistrationController extends Controller
                     $model->username = 'tmpname'.time();
 
                 $profile->attributes=((isset($_POST['Profile'])?$_POST['Profile']:array()));
+                $profile->firstname = $_POST['RegistrationForm']['email'];
                 
                 $reCaptcha = new ReCaptcha;
 
-                
+
                 if ($model->validate() && $profile->validate() && $reCaptcha->checkResponse()) {
 
                     $soucePassword = $model->password;
@@ -95,7 +96,7 @@ class RegistrationController extends Controller
                     }
                 } else $profile->validate();
             }
-            
+
             if (stristr($model->email, '@tmp.test'))
                 $model->email = '';
 

@@ -37,7 +37,7 @@ if (!empty($model->addresses))
                         <div class="offer-price-large">
                             <p class="price-type"><?= Yii::t('app', 'Price') ?></p>
                             <p class="price-value"><?= $this->formatPrice($model->publicOptions[0]->price_daily); ?></p>       
-                            <a href="#" id="op_button" owner_id="<?=$model->owner->id; ?>" data-phone="<?php echo $model->phone?>" <?= !empty($model->publicOptions[0]->use_paypal)? 'class="btn btn-success btn-solid btn-block btn-submit" data-target="additional-options-form">Order and Pay' : 'class="user-phone">Телефон'; ?>  <i class="fa fa-angle-right"></i></a><br />
+                            <a href="#" id="op_button" data-guest="<?php echo Yii::app()->user->isGuest?'1':'0'?>" owner_id="<?=$model->owner->id; ?>" data-phone="<?php echo $model->phone?>" <?= !empty($model->publicOptions[0]->use_paypal)? 'class="btn btn-success btn-solid btn-block btn-submit" data-target="additional-options-form">Order and Pay' : 'class="user-phone">Телефон'; ?>  <i class="fa fa-angle-right"></i></a><br />
                         </div>
                         <div class="client-info">
                             <div class="owner-preview">
@@ -327,7 +327,7 @@ if (!empty($model->addresses))
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-4 col-md-3">
-                                <a href="#" id="show_offer_phone" phone="<?=$model->phone; ?>" <?= !empty($model->publicOptions[0]->use_paypal)? 'class="btn btn-success btn-solid btn-block btn-submit" data-target="additional-options-form">Order and Pay' : 'class="user-phone">Телефон'; ?>  <i class="fa fa-angle-right"></i></a><br />
+                                <a href="#" id="show_offer_phone"  data-guest="<?php echo Yii::app()->user->isGuest?'1':'0'?>" phone="<?=$model->phone; ?>" <?= !empty($model->publicOptions[0]->use_paypal)? 'class="btn btn-success btn-solid btn-block btn-submit" data-target="additional-options-form">Order and Pay' : 'class="user-phone">Телефон'; ?>  <i class="fa fa-angle-right"></i></a><br />
  
                             </div>
                         </div>

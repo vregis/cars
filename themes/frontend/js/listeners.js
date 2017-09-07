@@ -263,6 +263,10 @@ $(document).ready(function() {
     if ($('#show_offer_phone').length) {
         $('#show_offer_phone').click(function() {
 
+            if($(this).attr('data-guest') == 1){
+                return false;
+            }
+
             var phone = $(this).attr('phone');
             if(phone != ''){
                 $('#op_button').html(phone);
@@ -273,6 +277,9 @@ $(document).ready(function() {
 
     if ($('#op_button').length) {
         $('#op_button').click(function() {
+            if($(this).attr('data-guest') == 1){
+                return false;
+            }
 
             var phone = $('#show_offer_phone').attr('phone');
             if(phone != ''){

@@ -14,5 +14,5 @@
             'rating'=>$data->rating,
             'htmlOptions'=>array('class' => 'star-rating-small'),
         )); ?>
-        <p class="offer-price"><?= $this->formatPrice($data->price_hourly); ?></p>
+        <p class="offer-price"><?= $this->formatPrice((new Offers())->getPriceDaily($data->id)); ?></p>
     </div>
